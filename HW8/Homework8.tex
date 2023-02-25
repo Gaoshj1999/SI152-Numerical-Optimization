@@ -1,0 +1,162 @@
+\documentclass[10pt]{article}
+\usepackage[UTF8]{ctex}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage{amsthm}  
+\usepackage{amsmath,amscd}
+\usepackage{amssymb,array}
+\usepackage{amsfonts,latexsym}
+\usepackage{graphicx,subfig,wrapfig}
+\usepackage{times}
+\usepackage{psfrag,epsfig}
+\usepackage{verbatim}
+\usepackage{tabularx}
+\usepackage[pagebackref=true,breaklinks=true,letterpaper=true,colorlinks,bookmarks=false]{hyperref}
+\usepackage{cite}
+\usepackage{algorithm}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{algorithmic}
+%\usepackage[amsmath,thmmarks]{ntheorem}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{bm}
+
+
+
+\newtheorem{thm}{Theorem}
+\newtheorem{mydef}{Definition}
+
+\DeclareMathOperator*{\rank}{rank}
+\DeclareMathOperator*{\trace}{trace}
+\DeclareMathOperator*{\acos}{acos}
+\DeclareMathOperator*{\argmax}{argmax}
+
+
+\renewcommand{\algorithmicrequire}{ \textbf{Input:}}     
+\renewcommand{\algorithmicensure}{ \textbf{Output:}}
+\renewcommand{\mathbf}{\boldsymbol}
+\newcommand{\mb}{\mathbf}
+\newcommand{\matlab}[1]{\texttt{#1}}
+\newcommand{\setname}[1]{\textsl{#1}}
+\newcommand{\Ce}{\mathbb{C}}
+\newcommand{\Ee}{\mathbb{E}}
+\newcommand{\Ne}{\mathbb{N}}
+\newcommand{\Se}{\mathbb{S}}
+\newcommand{\norm}[2]{\left\| #1 \right\|_{#2}}
+
+\newenvironment{mfunction}[1]{
+	\noindent
+	\tabularx{\linewidth}{>{\ttfamily}rX}
+	\hline
+	\multicolumn{2}{l}{\textbf{Function \matlab{#1}}}\\
+	\hline
+}{\\\endtabularx}
+
+\newcommand{\parameters}{\multicolumn{2}{l}{\textbf{Parameters}}\\}
+
+\newcommand{\fdescription}[1]{\multicolumn{2}{p{0.96\linewidth}}{
+		
+		\textbf{Description}
+		
+		#1}\\\hline}
+
+\newcommand{\retvalues}{\multicolumn{2}{l}{\textbf{Returned values}}\\}
+\def\0{\boldsymbol{0}}
+\def\b{\boldsymbol{b}}
+\def\bmu{\boldsymbol{\mu}}
+\def\e{\boldsymbol{e}}
+\def\u{\boldsymbol{u}}
+\def\x{\boldsymbol{x}}
+\def\v{\boldsymbol{v}}
+\def\w{\boldsymbol{w}}
+\def\N{\boldsymbol{N}}
+\def\X{\boldsymbol{X}}
+\def\Y{\boldsymbol{Y}}
+\def\A{\boldsymbol{A}}
+\def\B{\boldsymbol{B}}
+\def\y{\boldsymbol{y}}
+\def\cX{\mathcal{X}}
+\def\transpose{\top} % Vector and Matrix Transpose
+
+%\long\def\answer#1{{\bf ANSWER:} #1}
+\long\def\answer#1{}
+\newcommand{\myhat}{\widehat}
+\long\def\comment#1{}
+\newcommand{\eg}{{e.g.,~}}
+\newcommand{\ea}{{et al.~}}
+\newcommand{\ie}{{i.e.,~}}
+
+\newcommand{\db}{{\boldsymbol{d}}}
+\renewcommand{\Re}{{\mathbb{R}}}
+\newcommand{\Pe}{{\mathbb{P}}}
+
+\hyphenation{MATLAB}
+
+\usepackage[margin=1in]{geometry}
+
+\begin{document}
+	
+\title{	Numerical Optimization, 2020 Fall\\Homework $8$}
+\date{Due 14:59 (CST), Dec. 10, 2020 \\(NOTE: Homework will not be accepted after this due for any reason.)\\}
+\maketitle
+Throughout this assignment, we focus on the following trust region subproblem, which reads
+\begin{equation}\label{eq: TR_sub}
+	\begin{aligned}
+		\min_{\bm{d}\in\mathbb{R}^{n}}~&\quad m_{k}(\bm{d}):= f(\bm{x}_{k}) + \nabla f(\bm{x}_{k})^{T}\bm{d}_{k} + \tfrac{1}{2}\bm{d}_{k}^{T}H_{k}\bm{d}_{k}\\
+		\textrm{s.t.}~~\ &\quad\Vert\bm{d}\Vert\leq \Delta_{k},
+	\end{aligned}
+\end{equation}
+where $\Delta_{k} > 0$ is the trust-region radius.
+
+Note: Throughout this assignment, the notion of positive definiteness applies exclusively to symmetric matrices. Thus whenever we say that a matrix is positive (semi)definite, we implicitly assume that the matrix is symmetric.
+%===============================
+\section{Cauchy point calculation}
+~\textcolor{red}{[20pts]}~Please write down a closed-form expression of the Cauchy point.~\textcolor{red}{~(Make sure you provided detailed proof; otherwise you won't earn marks.)}
+
+Specifically, first solve the a linear version of~\eqref{eq: TR_sub} to obtain vector $\bm{d}^{s}_{k}$, that is,
+\begin{equation}\label{eq:linear_tr}
+	\bm{d}^{s}_{k} = \arg\min_{\bm{d}\in\mathbb{R}^{n}}f(\bm{x}_{k}) + \nabla f(\bm{x}_{k})^{T}\bm{d}_{k}\qquad~\textrm{s.t.}\quad\Vert\bm{d}\Vert\leq \Delta_{k}.
+\end{equation}
+
+Then, calculate the scalar $\tau_{k}>0$ that minimizes $m_{k}(\tau\bm{d}^{s}_{k})$ subject to the trust region bound, that is
+\begin{equation}\label{eq: scalar_cal}
+	\tau_{k} = \arg\min_{\tau\geq0}~m_{k}(\tau\bm{d}^{s}_{k})\qquad~\textrm{s.t.}\quad\Vert\tau\bm{d}^{s}_{k}\Vert\leq \Delta_{k}.
+\end{equation}
+Set $\bm{d}_{k}^{c} = \tau_{k}\bm{d}^{s}_{k}$.
+%===============================
+\section{Local convergence for trust region methods}
+~\textcolor{red}{[20pts]}~Given a step $\bm{d}_{k}$, consider the ratio (with positive denominator):
+\begin{equation}
+	\rho_{k} := \frac{f(\bm{x}_{k}) - f(\bm{x}_{k} + \bm{d}_{k}) }{m_{k}(\bm{0}) - m_{k}(\bm{d}_{k})}.
+\end{equation}
+
+Show that if $\Delta_{k}\to 0$, then $\rho_{k}\to1$. (This proves that for $\Delta_{k}$ sufficiently small, $m_{k}(\bm{d})$ approximates $f(\bm{x}_{k} + \bm{d}_{k})$ well.)
+
+%===============================
+\section{Exact line search}
+~\textcolor{red}{[20pts]}~Consider minimizing the following quadratic function
+\begin{equation}\label{eq: quadratic}
+	\min_{\bm{x}\in\mathbb{R}^{n}}\quad f(\bm{x}) = \tfrac{1}{2}\bm{x}^{T}Q\bm{x} - \bm{b}^{T}\bm{x},
+\end{equation}
+where $Q\in\mathbb{R}^{n\times n}$ is positive definite and $\bm{b} \in \mathbb{R}^{n}$.
+
+Let $\bm{d}_{k}$ be a descent direction at the $k$th iterate. Suppose that we search along this direction from $\bm{x}^{k}$ for a new iterate, and the line search are exact. Please find the stepsize $\alpha$. This can be achieved exactly solving the following one-dimensional minimization problem
+\begin{equation}
+	\min_{\alpha > 0} \quad f(\bm{x}_{k} + \alpha \bm{d}_{k}).
+\end{equation}
+
+%===============================
+\section{The conjugate gradient algorithm}
+~\textcolor{red}{[20pts]}~Let $A\in \mathbb{R}^{n\times n}$ be a positive definite matrix. Show that if the directions $\bm{d}_{0}, \ldots, \bm{d}_{k}\in\mathbb{R}^{n}$, $k\leq n-1$,  are $A$-conjugate, then they are linearly independent.~\textcolor{red}{(Hint: We say that a set of nonzero vectors $\bm{d}_1,\ldots,\bm{d}_{m}\in\mathbb{R}^{n}$ are $A$-conjugate if $\bm{d}_{i}^{T}A\bm{d}_{i} = 0,\ \  \forall i,j,~~i\neq j$.)}
+
+%===============================
+\section{Trust region subproblems}
+Consider the trust region subproblem~\eqref{eq: TR_sub}, and $H_k$ is positive definite. Let $\theta_{k}$ denote the angle between $\bm{d}_{k}$ and $-\nabla f(\bm{x}_{k})$, defined by 
+$$\cos\theta_{k} = \frac{-\nabla f(\bm{x}_{k})^{T}\bm{d}_{k}}{\Vert\nabla f(\bm{x}_{k})\Vert\Vert\bm{d}_{k}\Vert}.$$Show that
+\begin{itemize}
+	\item[(i)] ~\textcolor{red}{[10pts]}~For sufficiently large $\Delta_{k}$, the trust region subproblem~\eqref{eq: TR_sub} will be solved by the Newton step.
+	
+	\item[(ii)] ~\textcolor{red}{[10pts]}~When $\Delta_{k}$ approaches $0$, the angle $\theta_{k}\to 0$.
+\end{itemize}
+\end{document}

@@ -1,0 +1,177 @@
+\documentclass[10pt]{article}
+\usepackage[UTF8]{ctex}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+
+\usepackage{amsmath,amscd}
+\usepackage{amssymb,array}
+\usepackage{amsfonts,latexsym}
+\usepackage{graphicx,subfig,wrapfig}
+\usepackage{times}
+\usepackage{psfrag,epsfig}
+\usepackage{verbatim}
+\usepackage{tabularx}
+\usepackage[pagebackref=true,breaklinks=true,letterpaper=true,colorlinks,bookmarks=false]{hyperref}
+\usepackage{cite}
+\usepackage{algorithm}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{algorithmic}
+\usepackage[amsmath,thmmarks]{ntheorem}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{bm}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{mydef}{Definition}
+
+\DeclareMathOperator*{\rank}{rank}
+\DeclareMathOperator*{\trace}{trace}
+\DeclareMathOperator*{\acos}{acos}
+\DeclareMathOperator*{\argmax}{argmax}
+
+
+\renewcommand{\algorithmicrequire}{ \textbf{Input:}}     
+\renewcommand{\algorithmicensure}{ \textbf{Output:}}
+\renewcommand{\mathbf}{\boldsymbol}
+\newcommand{\mb}{\mathbf}
+\newcommand{\matlab}[1]{\texttt{#1}}
+\newcommand{\setname}[1]{\textsl{#1}}
+\newcommand{\Ce}{\mathbb{C}}
+\newcommand{\Ee}{\mathbb{E}}
+\newcommand{\Ne}{\mathbb{N}}
+\newcommand{\Se}{\mathbb{S}}
+\newcommand{\norm}[2]{\left\| #1 \right\|_{#2}}
+
+\newenvironment{mfunction}[1]{
+	\noindent
+	\tabularx{\linewidth}{>{\ttfamily}rX}
+	\hline
+	\multicolumn{2}{l}{\textbf{Function \matlab{#1}}}\\
+	\hline
+}{\\\endtabularx}
+
+\newcommand{\parameters}{\multicolumn{2}{l}{\textbf{Parameters}}\\}
+
+\newcommand{\fdescription}[1]{\multicolumn{2}{p{0.96\linewidth}}{
+		
+		\textbf{Description}
+		
+		#1}\\\hline}
+
+\newcommand{\retvalues}{\multicolumn{2}{l}{\textbf{Returned values}}\\}
+\def\0{\boldsymbol{0}}
+\def\b{\boldsymbol{b}}
+\def\bmu{\boldsymbol{\mu}}
+\def\e{\boldsymbol{e}}
+\def\u{\boldsymbol{u}}
+\def\x{\boldsymbol{x}}
+\def\v{\boldsymbol{v}}
+\def\w{\boldsymbol{w}}
+\def\N{\boldsymbol{N}}
+\def\X{\boldsymbol{X}}
+\def\Y{\boldsymbol{Y}}
+\def\A{\boldsymbol{A}}
+\def\B{\boldsymbol{B}}
+\def\y{\boldsymbol{y}}
+\def\cX{\mathcal{X}}
+\def\transpose{\top} % Vector and Matrix Transpose
+
+%\long\def\answer#1{{\bf ANSWER:} #1}
+\long\def\answer#1{}
+\newcommand{\myhat}{\widehat}
+\long\def\comment#1{}
+\newcommand{\eg}{{e.g.,~}}
+\newcommand{\ea}{{et al.~}}
+\newcommand{\ie}{{i.e.,~}}
+
+\newcommand{\db}{{\boldsymbol{d}}}
+\renewcommand{\Re}{{\mathbb{R}}}
+\newcommand{\Pe}{{\mathbb{P}}}
+
+\hyphenation{MATLAB}
+
+\usepackage[margin=1in]{geometry}
+
+\begin{document}
+	
+\title{	Numerical Optimization, 2020 Fall\\Homework $2$}
+\date{Due on 14:59, Sep 24, 2020\\}
+\maketitle
+
+%%%%%--------------------
+\section{线性规划标准型}
+考虑如下为标准型的线性规划:
+\begin{equation}\label{eq: problem1}
+	\begin{aligned}
+		\min_{\bm{x}}~\quad&\bm{c}^{\top}\bm{x}\\
+		\textrm{s.t.}~\quad&\bm{A}\bm{x} = \bm{b}\\
+		&\bm{x}\geq \bm{0},
+	\end{aligned}
+\end{equation}
+其中~$\bm{A}\in\mathbb{R}^{m\times n}$, $\bm{c}\in\mathbb{R}^{n}$ 和 $\bm{b}\in\mathbb{R}^{m}$给定.
+\begin{itemize}
+	\item[$(1)$] 上述标准型~\eqref{eq: problem1}~中关于$\bm{A}$满秩 (full rank) 的假设是否合理? 请给出你判断的理由.~\textcolor{red}{[10pts]}
+	
+	\item[$(2)$] 在标准型里, 一个基本可行解~(basic feasible solutions)~是否与一组基 (basis)~一一对应?~\textcolor{red}{[15pts]}
+\end{itemize}
+
+
+
+\section{基本解和基本可行解} 
+考虑如下线性规划问题 (具体地, 请参考Lecture~$2$中$37$页的例~$3$)
+\begin{equation}\label{eq: ex3}
+	\begin{array}{c}
+		\begin{aligned}
+			\min~&-2 x_{1}-x_{2} \\
+			\textrm { s.t. } &x_{1}+\frac{8}{3} x_{2} \leq 4, \\
+			&x_{1}+x_{2} \leq 2, \\
+			&2 x_{1} \leq 3, \\
+			&x_{1} \geq 0, x_{2} \geq 0.
+		\end{aligned}
+	\end{array}
+\end{equation}
+请回答此问题中有多少个基本解(basic solutions), 有多少个基本可行解? 请分别写出相应的解.~\textcolor{red}{[25pts]}
+
+
+
+\section{极点}
+\begin{itemize}
+	\item[$1.$] 证明如下两个集合的极点一一对应.~\textcolor{red}{[12pts]}
+	\begin{equation}\label{prob.Linf}
+		\begin{aligned}
+			S_1 &= \{\bm{x}\in\mathbb{R}^{n}\mid \bm{A}\bm{x}\leq\bm{b}, \bm{x}\geq\bm{0}\},\\
+			S_2 &= \{(\bm{x},\bm{y})\in\mathbb{R}^{n}\times\mathbb{R}^{m}\mid \bm{A}\bm{x} + \bm{y} = \bm{b}, \bm{x}\geq\bm{0}, \bm{y}\geq\bm{0}\}.
+		\end{aligned}
+	\end{equation}
+
+	\item[$2.$]
+	如图~\ref{fig: linear program}~所示, 请回答
+	\begin{itemize}
+		\item[$(1)$] 集合$P = \{\bm{x}\in\mathbb{R}^{2}\mid 0\leq x_1\leq 1\}$有极点吗?~\textcolor{red}{[3pts]}
+		
+		\item[$(2)$] 它的标准型是什么?~\textcolor{red}{[5pts]}
+		
+		\item[$(3)$] 它的标准型有极点吗? 若有, 则给出一个极点, 并解释为什么是极点.~\textcolor{red}{[5pts]}
+	\end{itemize}
+\end{itemize}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=1in]{lp.jpg}
+	\caption{集合P}
+	\label{fig: linear program}
+\end{figure}
+
+
+
+\section{AMPL实现}
+考虑如下~Haverly pooling~问题, 如图~\ref{fig: Haverly}~示, 请使用AMPL实现并求解.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=4in]{Haverly pooling.jpg}
+	\caption{Example: Haverly Pooling Problem.}
+	\label{fig: Haverly}
+\end{figure}
+
+(注意: 使用AMPL solver或者NEOS solver均可. 另外, 请在提交的作业中注明使用的求解器类型, 把求解结果呈现出来 (截图附在PDF文件即可), 并把源代码一起提交. 提交的作业请打包为.zip文件, 包含你的PDF以及源码.)~\textcolor{red}{[25pts]}
+\end{document} 

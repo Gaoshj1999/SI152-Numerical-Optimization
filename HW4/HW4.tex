@@ -1,0 +1,170 @@
+\documentclass[10pt]{article}
+\usepackage[UTF8]{ctex}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage{amsthm}  
+\usepackage{amsmath,amscd}
+\usepackage{amssymb,array}
+\usepackage{amsfonts,latexsym}
+\usepackage{graphicx,subfig,wrapfig}
+\usepackage{times}
+\usepackage{psfrag,epsfig}
+\usepackage{verbatim}
+\usepackage{tabularx}
+\usepackage[pagebackref=true,breaklinks=true,letterpaper=true,colorlinks,bookmarks=false]{hyperref}
+\usepackage{cite}
+\usepackage{algorithm}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{algorithmic}
+%\usepackage[amsmath,thmmarks]{ntheorem}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{bm}
+
+
+
+\newtheorem{thm}{Theorem}
+\newtheorem{mydef}{Definition}
+
+\DeclareMathOperator*{\rank}{rank}
+\DeclareMathOperator*{\trace}{trace}
+\DeclareMathOperator*{\acos}{acos}
+\DeclareMathOperator*{\argmax}{argmax}
+
+
+\renewcommand{\algorithmicrequire}{ \textbf{Input:}}     
+\renewcommand{\algorithmicensure}{ \textbf{Output:}}
+\renewcommand{\mathbf}{\boldsymbol}
+\newcommand{\mb}{\mathbf}
+\newcommand{\matlab}[1]{\texttt{#1}}
+\newcommand{\setname}[1]{\textsl{#1}}
+\newcommand{\Ce}{\mathbb{C}}
+\newcommand{\Ee}{\mathbb{E}}
+\newcommand{\Ne}{\mathbb{N}}
+\newcommand{\Se}{\mathbb{S}}
+\newcommand{\norm}[2]{\left\| #1 \right\|_{#2}}
+
+\newenvironment{mfunction}[1]{
+	\noindent
+	\tabularx{\linewidth}{>{\ttfamily}rX}
+	\hline
+	\multicolumn{2}{l}{\textbf{Function \matlab{#1}}}\\
+	\hline
+}{\\\endtabularx}
+
+\newcommand{\parameters}{\multicolumn{2}{l}{\textbf{Parameters}}\\}
+
+\newcommand{\fdescription}[1]{\multicolumn{2}{p{0.96\linewidth}}{
+		
+		\textbf{Description}
+		
+		#1}\\\hline}
+
+\newcommand{\retvalues}{\multicolumn{2}{l}{\textbf{Returned values}}\\}
+\def\0{\boldsymbol{0}}
+\def\b{\boldsymbol{b}}
+\def\bmu{\boldsymbol{\mu}}
+\def\e{\boldsymbol{e}}
+\def\u{\boldsymbol{u}}
+\def\x{\boldsymbol{x}}
+\def\v{\boldsymbol{v}}
+\def\w{\boldsymbol{w}}
+\def\N{\boldsymbol{N}}
+\def\X{\boldsymbol{X}}
+\def\Y{\boldsymbol{Y}}
+\def\A{\boldsymbol{A}}
+\def\B{\boldsymbol{B}}
+\def\y{\boldsymbol{y}}
+\def\cX{\mathcal{X}}
+\def\transpose{\top} % Vector and Matrix Transpose
+
+%\long\def\answer#1{{\bf ANSWER:} #1}
+\long\def\answer#1{}
+\newcommand{\myhat}{\widehat}
+\long\def\comment#1{}
+\newcommand{\eg}{{e.g.,~}}
+\newcommand{\ea}{{et al.~}}
+\newcommand{\ie}{{i.e.,~}}
+
+\newcommand{\db}{{\boldsymbol{d}}}
+\renewcommand{\Re}{{\mathbb{R}}}
+\newcommand{\Pe}{{\mathbb{P}}}
+
+\hyphenation{MATLAB}
+
+\usepackage[margin=1in]{geometry}
+
+\begin{document}
+	
+\title{	Numerical Optimization, 2020 Fall\\Homework $4$}
+\date{Due on 14:59, Oct. 15, 2020\\}
+\maketitle
+
+%%%%%--------------------
+
+$\bm{1}.$ 请按要求写出下列线性规划问题对应的对偶问题.
+\begin{itemize}
+	\item[$(1)$] 请参考Lecture $5$提供的原-对偶表格法, 写出如下问题对应的对偶问题并使用\textbf{图解法}求解.~\textcolor{red}{[15pts]}
+	\begin{equation}
+		\begin{array}{ll}
+			\min & 12 x_{1}+8 x_{2}+16 x_{3}+12 x_{4} \\
+			\text { s.t. } & -2 x_{1}-x_{2}-4 x_{3} \leq -2 \\
+			& -2 x_{1}-2 x_{2}-4 x_{4} \leq -3 \\
+			& x_{i} \geq 0, \quad i=1, \cdots, 4.
+		\end{array}
+	\end{equation}
+
+	\item[$(2)$] 请使用Lagrange方法写出如下问题对应的对偶问题.~\textcolor{red}{[10pts]}
+	\begin{equation}
+		\begin{array}{ll}
+			\min & x_{1} - x_{2} \\
+			\text { s.t. } & 2 x_{1} + 3 x_{2} - x_{3} + x_{4} \leq 0 \\
+			& 3 x_{1} + x_{2}  + 4 x_{3} - 2 x_{4} \geq 3 \\
+			& -x_{1} - x_{2} + 2 x_{3} + x_{4} = 6\\
+			& x_1 \leq 0\\
+			& x_{2}, x_{3} \geq 0.
+		\end{array}
+	\end{equation}
+\end{itemize}
+
+$\bm{2}.$ 考虑如下的两阶段法中第一阶段的辅助问题
+\begin{equation}\label{eq: Auxiliary}
+	\begin{aligned}
+		\min_{\substack{\bm{x}\in \mathbb{R}^{n}\\\bm{y}\in\mathbb{R}^{m}}}~\quad&\sum_{i=1}^{m}y_i\\
+		\textrm{s.t.}~\quad&\bm{A}\bm{x} + \bm{y}= \bm{b}\\
+		&\bm{x}\geq \bm{0}, \bm{y} \geq \bm{0}
+	\end{aligned}
+\end{equation}
+其中~$\bm{A}\in\mathbb{R}^{m\times n}$, $\bm{c}\in\mathbb{R}^{n}$ 和 $\bm{b}\in\mathbb{R}^{m}$给定.
+\begin{itemize}
+	\item[$(1)$] 写出问题~\eqref{eq: Auxiliary}~的对偶问题.~\textcolor{red}{[15pts]}
+	
+	\item[$(2)$] 对于上述问题$(1)$中得到的对偶问题, 请问它有最优解吗?请给出充分的理由.~\textcolor{red}{[15pts]}
+\end{itemize}
+
+
+$\bm{3}.$ 
+如图~\ref{fig: thm}~示.  请解释: 为什么该定理成立? (\textcolor{red}{提示: 利用强对偶定理.})~\textcolor{red}{[15pts]}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=5in]{thm.jpg}
+	\caption{Lecture $5$~第~$11$~页给出的定理.}
+	\label{fig: thm}
+\end{figure}
+
+$\bm{4}.$
+如图~\ref{fig: pivot}~示. 请解释: 如果初始单纯型表格含有单位阵, 为什么转轴完成后对应的最下方的位置是最优乘子? (\textcolor{red}{注意: 回答需要针对一般的线性规划问题转轴, 不能仅仅解释给出的例子.})~\textcolor{red}{[15pts]}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=4in]{pivot.jpg}
+	\caption{Lecture $5$~第~$13$~页给出的单纯型表示例.}
+	\label{fig: pivot}
+\end{figure}
+
+
+$\bm{5}.$
+证明: 线性规划问题求解等价于求解一个线性可行性问题.(\textcolor{red}{提示: 请参考~Lecture~$5$第~$14$页.})~\textcolor{red}{[15pts]}
+
+
+\end{document}

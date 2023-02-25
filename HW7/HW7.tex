@@ -1,0 +1,143 @@
+\documentclass[10pt]{article}
+\usepackage[UTF8]{ctex}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage{url}
+\usepackage{bm}
+\usepackage{amsmath,amscd}
+\usepackage{amssymb,array}
+\usepackage{amsfonts,latexsym}
+\usepackage{graphicx,subfig,wrapfig}
+\usepackage{times}
+\usepackage{psfrag,epsfig}
+\usepackage{verbatim}
+\usepackage{tabularx}
+\usepackage[pagebackref=true,breaklinks=true,letterpaper=true,colorlinks,bookmarks=false]{hyperref}
+\usepackage{cite}
+\usepackage{algorithm}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{algorithmic}
+\usepackage[amsmath,thmmarks]{ntheorem}
+\usepackage{listings}
+\usepackage{color}
+
+
+\newtheorem{thm}{Theorem}
+\newtheorem{mydef}{Definition}
+
+\DeclareMathOperator*{\rank}{rank}
+\DeclareMathOperator*{\trace}{trace}
+\DeclareMathOperator*{\acos}{acos}
+\DeclareMathOperator*{\argmax}{argmax}
+
+
+\renewcommand{\algorithmicrequire}{ \textbf{Input:}}     
+\renewcommand{\algorithmicensure}{ \textbf{Output:}}
+\renewcommand{\mathbf}{\boldsymbol}
+\newcommand{\mb}{\mathbf}
+\newcommand{\matlab}[1]{\texttt{#1}}
+\newcommand{\setname}[1]{\textsl{#1}}
+\newcommand{\Ce}{\mathbb{C}}
+\newcommand{\Ee}{\mathbb{E}}
+\newcommand{\Ne}{\mathbb{N}}
+\newcommand{\Se}{\mathbb{S}}
+\newcommand{\norm}[2]{\left\| #1 \right\|_{#2}}
+
+\newenvironment{mfunction}[1]{
+	\noindent
+	\tabularx{\linewidth}{>{\ttfamily}rX}
+	\hline
+	\multicolumn{2}{l}{\textbf{Function \matlab{#1}}}\\
+	\hline
+}{\\\endtabularx}
+
+\newcommand{\parameters}{\multicolumn{2}{l}{\textbf{Parameters}}\\}
+
+\newcommand{\fdescription}[1]{\multicolumn{2}{p{0.96\linewidth}}{
+		
+		\textbf{Description}
+		
+		#1}\\\hline}
+
+\newcommand{\retvalues}{\multicolumn{2}{l}{\textbf{Returned values}}\\}
+\def\0{\boldsymbol{0}}
+\def\b{\boldsymbol{b}}
+\def\bmu{\boldsymbol{\mu}}
+\def\e{\boldsymbol{e}}
+\def\u{\boldsymbol{u}}
+\def\x{\boldsymbol{x}}
+\def\v{\boldsymbol{v}}
+\def\w{\boldsymbol{w}}
+\def\N{\boldsymbol{N}}
+\def\X{\boldsymbol{X}}
+\def\Y{\boldsymbol{Y}}
+\def\A{\boldsymbol{A}}
+\def\B{\boldsymbol{B}}
+\def\y{\boldsymbol{y}}
+\def\cX{\mathcal{X}}
+\def\transpose{\top} % Vector and Matrix Transpose
+
+%\long\def\answer#1{{\bf ANSWER:} #1}
+\long\def\answer#1{}
+\newcommand{\myhat}{\widehat}
+\long\def\comment#1{}
+\newcommand{\eg}{{e.g.,~}}
+\newcommand{\ea}{{et al.~}}
+\newcommand{\ie}{{i.e.,~}}
+
+\newcommand{\db}{{\boldsymbol{d}}}
+\renewcommand{\Re}{{\mathbb{R}}}
+\newcommand{\Pe}{{\mathbb{P}}}
+
+\hyphenation{MATLAB}
+
+\usepackage[margin=1in]{geometry}
+
+\begin{document}
+	
+\title{	Numerical Optimization, 2020 Fall\\Homework 7}
+\date{Due on 14:59 NOV 26, 2020\\
+	请尽量使用提供的tex模板,若手写作答请标清题号并拍照加入文档.
+	}
+\maketitle
+
+%%%%%--------------------
+\section{收敛速率}
+分别构造具有次线性，线性，超线性和二阶收敛速率的序列的例子。{\color{red}[10 pts]}
+
+\section{梯度下降法的收敛性分析}
+考虑如下优化问题：
+\begin{equation}\label{f.prob}
+	\min_{\bm{x}\in \mathbb{R}^n} \quad f(\bm{x}),
+\end{equation}
+其中目标函数$f$满足一下性质:
+\begin{itemize}
+	\item 对任意$\bm{x}$, $f(\bm{x})\ge \underline{f}$。
+	\item $\nabla f$是Lipschitz连续的，即对于任意的$\bm{x}, \bm{y}$，存在$L>0$使得
+	$$
+	\|\nabla f(\bm{x}) - \nabla f(\bm{y})\|_2 \le L \|\bm{x}- \bm{y}\|_2.
+	$$	
+\end{itemize}
+若采用梯度下降法求解问题\eqref{f.prob}，记所产生的迭代点序列为$\{\bm{x}^k\}$。迭代点的更新为$\bm{x}^{k+1} \leftarrow \bm{x}^k + \alpha^k\bm{d}^k$。试证明以下问题。
+\begin{enumerate}
+	\item[(i)] 在一点$\bm{x}^k$处给定一个下降方向$\bm{d}^k$，即$\bm{d}^k$满足$\left \langle \nabla f(\bm{x}^k), \bm{d}^k \right \rangle <0$。试证明：对于充分小的$\alpha>0$，有$f(\bm{x}+\alpha\bm{d}^k)<f(\bm{x}^k)$成立。{\color{red}[10 pts]}
+	\item[(ii)] 假设存在$\delta>0$使得$-\frac{\left \langle \nabla f(\bm{x}^k), \bm{d}^k \right \rangle}{\|\nabla f(\bm{x}^k)\|_2\|\bm{d}^k\|_2}>\delta$。证明回溯线搜索会有限步终止，并给出对应步长$\alpha^k$的下界。{\color{red}[10 pts]}
+	\item[(iii)] 根据上一问结果证明$\lim_{k\to\infty}\|\nabla f(\bm{x}^k)\|_2= \bm{0}$。{\color{red}[10 pts]}
+	\item[(iv)] 令$\bm{d}^k=-\nabla f(\bm{x}^k)$，采用固定步长$\alpha^k\equiv \alpha = \frac{1}{L}$。试证明该设定下梯度下降法的全局收敛性。{\color{red}[20 pts]}
+\end{enumerate}
+
+\section{编程题}
+考虑求解如下优化问题：
+\begin{equation}\label{f.rosen}
+\min_{x_1, x_2} \quad 100(x_2 - x_1^2)^2 + (1-x_1)^2.
+\end{equation}
+分别用\textbf{梯度下降法}和\textbf{牛顿法}结合Armijo回溯搜索编程求解该问题。分别考虑用$\bm{x}^0=[1.2, 1.2]^T$和$\bm{x}^0=[-1.2, 1]^T$(较困难)作为初始点启动算法。
+
+\textbf{要求:对于两种初始点，分别画出两种算法步长$\alpha^k$和$\|\nabla f(\bm{x}^k)\|_\infty$随迭代步数$k$变化的曲线。}({\color{red}编程可使用matlab或python完成，请将代码截图贴在该文档中。}) {\color{red}[40pts]}
+
+(Hint: 步长初始值$\alpha_0=1$,参数$c_1$可选为$10^{-4}$，终止条件为$\|\nabla f(\bm{x}^k)\|_\infty\le 10^{-4}$.)
+
+
+
+\end{document} 

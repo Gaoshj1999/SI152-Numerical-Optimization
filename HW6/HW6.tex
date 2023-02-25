@@ -1,0 +1,133 @@
+\documentclass[10pt]{article}
+\usepackage[UTF8]{ctex}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage{amsthm}  
+\usepackage{amsmath,amscd}
+\usepackage{amssymb,array}
+\usepackage{amsfonts,latexsym}
+\usepackage{graphicx,subfig,wrapfig}
+\usepackage{times}
+\usepackage{psfrag,epsfig}
+\usepackage{verbatim}
+\usepackage{tabularx}
+\usepackage[pagebackref=true,breaklinks=true,letterpaper=true,colorlinks,bookmarks=false]{hyperref}
+\usepackage{cite}
+\usepackage{algorithm}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{algorithmic}
+%\usepackage[amsmath,thmmarks]{ntheorem}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{bm}
+
+
+
+\newtheorem{thm}{Theorem}
+\newtheorem{mydef}{Definition}
+
+\DeclareMathOperator*{\rank}{rank}
+\DeclareMathOperator*{\trace}{trace}
+\DeclareMathOperator*{\acos}{acos}
+\DeclareMathOperator*{\argmax}{argmax}
+
+
+\renewcommand{\algorithmicrequire}{ \textbf{Input:}}     
+\renewcommand{\algorithmicensure}{ \textbf{Output:}}
+\renewcommand{\mathbf}{\boldsymbol}
+\newcommand{\mb}{\mathbf}
+\newcommand{\matlab}[1]{\texttt{#1}}
+\newcommand{\setname}[1]{\textsl{#1}}
+\newcommand{\Ce}{\mathbb{C}}
+\newcommand{\Ee}{\mathbb{E}}
+\newcommand{\Ne}{\mathbb{N}}
+\newcommand{\Se}{\mathbb{S}}
+\newcommand{\norm}[2]{\left\| #1 \right\|_{#2}}
+
+\newenvironment{mfunction}[1]{
+	\noindent
+	\tabularx{\linewidth}{>{\ttfamily}rX}
+	\hline
+	\multicolumn{2}{l}{\textbf{Function \matlab{#1}}}\\
+	\hline
+}{\\\endtabularx}
+
+\newcommand{\parameters}{\multicolumn{2}{l}{\textbf{Parameters}}\\}
+
+\newcommand{\fdescription}[1]{\multicolumn{2}{p{0.96\linewidth}}{
+		
+		\textbf{Description}
+		
+		#1}\\\hline}
+
+\newcommand{\retvalues}{\multicolumn{2}{l}{\textbf{Returned values}}\\}
+\def\0{\boldsymbol{0}}
+\def\b{\boldsymbol{b}}
+\def\bmu{\boldsymbol{\mu}}
+\def\e{\boldsymbol{e}}
+\def\u{\boldsymbol{u}}
+\def\x{\boldsymbol{x}}
+\def\v{\boldsymbol{v}}
+\def\w{\boldsymbol{w}}
+\def\N{\boldsymbol{N}}
+\def\X{\boldsymbol{X}}
+\def\Y{\boldsymbol{Y}}
+\def\A{\boldsymbol{A}}
+\def\B{\boldsymbol{B}}
+\def\y{\boldsymbol{y}}
+\def\cX{\mathcal{X}}
+\def\transpose{\top} % Vector and Matrix Transpose
+
+%\long\def\answer#1{{\bf ANSWER:} #1}
+\long\def\answer#1{}
+\newcommand{\myhat}{\widehat}
+\long\def\comment#1{}
+\newcommand{\eg}{{e.g.,~}}
+\newcommand{\ea}{{et al.~}}
+\newcommand{\ie}{{i.e.,~}}
+
+\newcommand{\db}{{\boldsymbol{d}}}
+\renewcommand{\Re}{{\mathbb{R}}}
+\newcommand{\Pe}{{\mathbb{P}}}
+
+\hyphenation{MATLAB}
+
+\usepackage[margin=1in]{geometry}
+
+\begin{document}
+	
+\title{	Numerical Optimization, 2020 Fall\\Homework $6$}
+\date{Due on 23:59, Nov. 06, 2020 \\(NOTE: Homework will not be accepted after this due for any reason.)\\}
+\maketitle
+%%%%%--------------------
+\section{\textbf{Warehousees for MX}}
+某西 (MX) 是一个美国邮寄物品租赁公司.顾客在该公司的网站上租赁物品, 然后MX会将它邮寄给顾客. 当顾客完成使用后, 需要将其邮寄回MX. MX的商业模式依赖于快速的发货时间(否则, 顾客没有耐心等待很长时间). 但是,像某东(MD)等公司的半日达速递服务不在我们的问题讨论范围之内, 因为他们的邮寄成本可能会相对较高.
+
+在早期, MX只有几个配送中心(Distriution Centers, DC for short), 并且一般需要$2$天的时间才能把物品邮寄到顾客手中. MX很快意识到提供快速的送货服务对于公司业务提升至关重要, 然后他们决定尝试为大约$90\%$的客户提供$1$日达的速递服务. 这项政策在很大程度上导致了几年前利润的大幅增长.
+
+在这道问题中, 您将进行数学建模并求解, 来确定MX应该把DC放置在何处, 以确保所需的顾客在$1$天邮寄范围内, 同时将建立DC的固定成本降至最低. (假定每个DC的物品处理和运输的单位成本都是相同的).
+\begin{itemize}
+	\item[$a)$] 将以下问题建模为整数规划(Integer Programming, IP for short)问题: 给定一组城市, 以及每个城市的人口和在该城市开设DC的固定成本. 目标是决定将DC设在哪些城市, 以便将总的固定成本降至最低, 同时还确保至少有$\alpha$人口在$1$天邮寄范围内. 
+	
+	注意: 确保清晰地定义您所使用的符号, 并指明哪些是参数(输入), 哪些是决策变量. 然后, 使用文字描述清楚您的每一个约束条件.~\textcolor{red}{[20pts]}
+
+	\item[$b)$] 使用AMPL实现您创立的模型. 请查看.zip文件warehouse.xlsx中的数据集来解决这个问题. 该数据集提供了全美$150$个大城市的位置和人口数 (根据$2000$年的美国人口普查), 以及在相应城市开设一家DC的年均固定成本. 文件中还包含数据集中每对城市之间的距离 (以英里为单位). 若两个城市之间的距离不超过$150$英里, 即可认定为它们在$1$天的邮寄范围内.
+	
+	另外, 覆盖率$\alpha = 90\%$, 请找到MX DC位置问题的最佳解决方案. 在您提交的文件中须包括两部分: PDF文件和~.zip文件 (\textcolor{red}{请您分离提交}). 其中模型文件(.mod), 数据文件 (.dat), 运行文件(.run)以及报告您的解决方案的总成本和要开放的DC总数: 用\textcolor{red}{截图}的方式提交在 PDF中; 所提交的~.zip文件中包含您编写的.mod, .dat, .run等文件.~\textcolor{red}{[25pts]}
+	
+	\item[$c)$] MX目前大约有$35$个DC开放. 这是否接近您在$b)$中找到的DC数量? 如果不是, 您的解决方案与MX的解决方案可能不同的原因是什么?~\textcolor{red}{[5pts]}
+\end{itemize}
+\newpage
+\section{\textbf{Solving the MX Problem}}
+在上述问题$\bm{1}$中, 您制定了一个IP模型来解决MX的DC定点问题, 以确保给定的人口分数($\alpha$)在距离其最近的DC的$1$天邮寄范围内. 在此问题中, 您将开发一种基于Lagrangian松弛来求解此IP的方法.
+
+作为出发点, 您要根据您的IP模型松弛某个约束, 并定义一个相应的乘子.
+\begin{itemize}
+	\item[$a)$] 写出这个松弛产生的Lagrangian子问题.~\textcolor{red}{[20pts]}
+	
+	\item[$b)$] 子问题应分解为两个分离的问题, 一个仅包含$\bm{x}$变量, 另一个仅包含$\bm{y}$变量. 写出这两个不同的问题.~\textcolor{red}{[20pts]}
+	
+	\item[$c)$] 请解释如何求解两个子问题, 即$\bm{x}$-子问题和$\bm{y}$-子问题. 您的求解方法可能不依赖于使用单纯型法或任何其他一般的LP或IP算法.~\textcolor{red}{[10pts]}
+\end{itemize}
+\end{document}
