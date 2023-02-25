@@ -1,0 +1,147 @@
+\documentclass[10pt]{article}
+\usepackage[UTF8]{ctex}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+
+\usepackage{amsmath,amscd}
+\usepackage{amssymb,array}
+\usepackage{amsfonts,latexsym}
+\usepackage{graphicx,subfig,wrapfig}
+\usepackage{times}
+\usepackage{psfrag,epsfig}
+\usepackage{verbatim}
+\usepackage{tabularx}
+\usepackage[pagebackref=true,breaklinks=true,letterpaper=true,colorlinks,bookmarks=false]{hyperref}
+\usepackage{cite}
+\usepackage{algorithm}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{algorithmic}
+\usepackage[amsmath,thmmarks]{ntheorem}
+\usepackage{listings}
+\usepackage{color}
+
+
+\newtheorem{thm}{Theorem}
+\newtheorem{mydef}{Definition}
+
+\DeclareMathOperator*{\rank}{rank}
+\DeclareMathOperator*{\trace}{trace}
+\DeclareMathOperator*{\acos}{acos}
+\DeclareMathOperator*{\argmax}{argmax}
+
+
+\renewcommand{\algorithmicrequire}{ \textbf{Input:}}     
+\renewcommand{\algorithmicensure}{ \textbf{Output:}}
+\renewcommand{\mathbf}{\boldsymbol}
+\newcommand{\mb}{\mathbf}
+\newcommand{\matlab}[1]{\texttt{#1}}
+\newcommand{\setname}[1]{\textsl{#1}}
+\newcommand{\Ce}{\mathbb{C}}
+\newcommand{\Ee}{\mathbb{E}}
+\newcommand{\Ne}{\mathbb{N}}
+\newcommand{\Se}{\mathbb{S}}
+\newcommand{\norm}[2]{\left\| #1 \right\|_{#2}}
+
+\newenvironment{mfunction}[1]{
+	\noindent
+	\tabularx{\linewidth}{>{\ttfamily}rX}
+	\hline
+	\multicolumn{2}{l}{\textbf{Function \matlab{#1}}}\\
+	\hline
+}{\\\endtabularx}
+
+\newcommand{\parameters}{\multicolumn{2}{l}{\textbf{Parameters}}\\}
+
+\newcommand{\fdescription}[1]{\multicolumn{2}{p{0.96\linewidth}}{
+		
+		\textbf{Description}
+		
+		#1}\\\hline}
+
+\newcommand{\retvalues}{\multicolumn{2}{l}{\textbf{Returned values}}\\}
+\def\0{\boldsymbol{0}}
+\def\b{\boldsymbol{b}}
+\def\bmu{\boldsymbol{\mu}}
+\def\e{\boldsymbol{e}}
+\def\u{\boldsymbol{u}}
+\def\x{\boldsymbol{x}}
+\def\v{\boldsymbol{v}}
+\def\w{\boldsymbol{w}}
+\def\N{\boldsymbol{N}}
+\def\X{\boldsymbol{X}}
+\def\Y{\boldsymbol{Y}}
+\def\A{\boldsymbol{A}}
+\def\B{\boldsymbol{B}}
+\def\y{\boldsymbol{y}}
+\def\cX{\mathcal{X}}
+\def\transpose{\top} % Vector and Matrix Transpose
+
+%\long\def\answer#1{{\bf ANSWER:} #1}
+\long\def\answer#1{}
+\newcommand{\myhat}{\widehat}
+\long\def\comment#1{}
+\newcommand{\eg}{{e.g.,~}}
+\newcommand{\ea}{{et al.~}}
+\newcommand{\ie}{{i.e.,~}}
+
+\newcommand{\db}{{\boldsymbol{d}}}
+\renewcommand{\Re}{{\mathbb{R}}}
+\newcommand{\Pe}{{\mathbb{P}}}
+
+\hyphenation{MATLAB}
+
+\usepackage[margin=1in]{geometry}
+
+\begin{document}
+	
+\title{	Numerical Optimization, 2020 Fall\\Homework 1}
+\date{Due on 14:59 Sep 15, 2020\\
+	请尽量使用提供的tex模板,画图部分可手绘拍照加入文档.
+	}
+\maketitle
+
+%%%%%--------------------
+\section{优化问题的应用}
+给出目前业界线性规划的一个应用场景.介绍模型(变量、约束、目标).一般的规模是多大？
+
+
+\section{将下述问题建模成线性规划问题} 
+
+一个原油精练场有8百万桶原油A和5百万桶原油B用以安排下个月的生产.可用这些资源来生产售价为38元/桶的汽油,或者生产售价为33元/桶的民用燃料油.有三种生产过程可供选择,各自的生产参数如下:
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.5\linewidth]{prob1.png}
+	%\caption{Accuracy demo.}
+	\label{fig.prob1}
+\end{figure}
+除成本外,所有的量均以桶为单位.例如,对于第一个过程而言,利用3桶原油A和5桶原油B可以生产4桶汽油和3桶民用燃料油,成本为51元.表格中的成本指总的成本(即原油成本和生产过程的成本).将此问题建模成线性规划,其能使管理者极大化下个月的净利润.
+
+
+\section{线性规划的等价转换}
+\begin{enumerate}
+	\item[(i)]
+	考虑如下线性回归问题.令$(x_1, y_1), (x_2, y_2),\cdots,(x_n, y_n)$为样本点和对应标签, a和b为线性模型的参数.线性回归模型可表示为$y_i = a x_i + b,\ i=1,\cdots,n$.
+	用$L_{\infty}$范数作为该线性模型的损失函数,则对应的数学规划问题可建模为:
+	\begin{equation}\label{prob.Linf}
+	\min_{a, b}\ \max_i\ |y_i - (a x_i + b)|.
+	\end{equation}
+	将\eqref{prob.Linf}改写成等价的线性规划模型.
+
+	\item[(ii)]
+	极小化如下绝对值和问题:
+	\begin{equation}\label{prob.sumabs}
+	\begin{aligned}
+		\min_{x_1, x_2}\quad &|x_1| + |x_2|\\
+		s.t.\quad            &x_1 + 3x_2 \ge 5\\
+							 &2x_1 + x_2 \ge 5.
+	\end{aligned}
+	\end{equation}
+	\begin{enumerate}
+		\item[(a)] 引入新变量$x_1^+,x_1^-, x_2^+,x_2^-$,将问题\eqref{prob.sumabs}转换为线性规划问题.
+		\item[(b)] 分析为何只有当互补条件(即$x_1^+ x_1^-=0, x_2^+ x_2^-=0$)成立时, 问题取得最优解.
+		\item[(c)] 图解法求解问题\eqref{prob.sumabs}.
+	\end{enumerate}
+\end{enumerate}
+	
+\end{document} 
