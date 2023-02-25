@@ -1,0 +1,2580 @@
+set rider:=
+rider1
+rider2
+rider3
+rider4
+rider5
+rider6
+rider7
+rider8
+rider9
+rider10
+rider11
+rider12
+rider13
+rider14
+rider15
+rider16
+rider17
+rider18
+rider19
+rider20
+rider21
+rider22
+rider23
+rider24
+rider25
+rider26
+rider27
+rider28
+rider29
+rider30
+rider31
+rider32
+rider33
+rider34
+rider35
+rider36
+rider37
+rider38
+rider39
+rider40
+rider41
+rider42
+rider43
+rider44
+rider45
+rider46
+rider47
+rider48
+rider49
+rider50
+rider51
+rider52
+rider53
+rider54
+rider55
+rider56
+rider57
+rider58
+rider59
+rider60
+rider61
+rider62
+rider63
+rider64
+rider65
+rider66
+rider67
+rider68
+rider69
+rider70
+rider71
+rider72
+rider73
+rider74
+rider75
+rider76
+rider77
+rider78
+rider79
+rider80
+rider81
+rider82
+rider83
+rider84
+rider85
+rider86
+rider87
+rider88
+rider89
+rider90
+rider91
+rider92
+rider93
+rider94
+rider95
+rider96
+rider97
+rider98
+rider99
+rider100
+rider101
+rider102
+rider103
+rider104
+rider105
+rider106
+rider107
+rider108
+rider109
+rider110
+rider111
+rider112
+rider113
+rider114
+rider115
+rider116
+rider117
+rider118
+rider119
+rider120
+rider121
+rider122
+rider123
+rider124
+rider125
+rider126
+rider127
+rider128
+rider129
+rider130
+rider131
+rider132
+rider133
+rider134
+rider135
+rider136
+rider137
+rider138
+rider139
+rider140
+rider141
+rider142
+rider143
+rider144
+rider145
+rider146
+rider147
+rider148
+rider149
+rider150
+rider151
+rider152
+rider153
+rider154
+rider155
+rider156
+rider157
+rider158
+rider159
+rider160
+rider161
+rider162
+rider163
+rider164
+rider165
+rider166
+rider167
+rider168
+rider169
+rider170
+rider171
+rider172
+rider173
+rider174
+rider175
+rider176
+rider177
+rider178
+rider179
+rider180
+rider181
+rider182
+rider183
+rider184
+rider185
+rider186
+rider187
+rider188
+rider189
+rider190
+rider191
+rider192
+rider193
+rider194
+rider195
+rider196
+rider197
+rider198
+rider199
+rider200
+rider201
+rider202
+rider203
+rider204
+rider205
+rider206
+rider207
+rider208
+rider209
+rider210
+rider211
+rider212
+rider213
+rider214
+rider215
+rider216
+rider217
+rider218
+rider219
+rider220
+rider221
+rider222
+rider223
+rider224
+rider225
+rider226
+rider227
+rider228
+rider229
+rider230
+rider231
+rider232
+rider233
+rider234
+rider235
+rider236
+rider237
+rider238
+rider239
+rider240
+rider241
+rider242
+rider243
+rider244
+rider245
+rider246
+rider247
+rider248
+rider249
+rider250
+rider251
+rider252
+rider253
+rider254
+rider255
+rider256
+rider257
+rider258
+rider259
+rider260
+rider261
+rider262
+rider263
+rider264
+rider265
+rider266
+rider267
+rider268
+rider269
+rider270
+rider271
+rider272
+rider273
+rider274
+rider275
+rider276
+rider277
+rider278
+rider279
+rider280
+rider281
+rider282
+rider283
+rider284
+rider285
+rider286
+rider287
+rider288
+rider289
+rider290
+rider291
+rider292
+rider293
+rider294
+rider295
+rider296
+rider297
+rider298
+rider299
+rider300
+rider301
+rider302
+rider303
+rider304
+rider305
+rider306
+rider307
+rider308
+rider309
+rider310
+rider311
+rider312
+rider313
+rider314
+rider315
+rider316
+rider317
+rider318
+rider319
+rider320
+rider321
+rider322
+rider323
+rider324
+rider325
+rider326
+rider327
+rider328
+rider329
+rider330
+rider331
+rider332
+rider333;
+set request:=	request1	request2	request3	request4	request5	request6	request7	request8	request9	request10	request11	request12	request13	request14	request15	request16	request17	request18	request19	request20	request21	request22	request23	request24	request25	request26	request27	request28	request29	request30	request31	request32	request33	request34	request35	request36	request37	request38	request39;
+set Trip:= trip1	trip2	trip3	trip4	trip5	trip6	trip7	trip8	trip9	trip10	trip11	trip12	trip13	trip14	trip15	trip16	trip17	trip18	trip19	trip20	trip21	trip22	trip23	trip24	trip25	trip26	trip27	trip28	trip29	trip30	trip31	trip32	trip33	trip34	trip35	trip36	trip37	trip38	trip39	trip40	trip41	trip42	trip43	trip44	trip45	trip46	trip47	trip48	trip49	trip50	trip51	trip52	trip53	trip54	trip55	trip56	trip57	trip58	trip59	trip60	trip61	trip62	trip63	trip64	trip65	trip66	trip67	trip68	trip69	trip70	trip71	trip72	trip73	trip74	trip75	trip76	trip77	trip78	trip79	trip80	trip81;
+set trip[rider1]:=	trip20	trip60	trip69;																							
+set trip[rider2]:=	trip3	trip4	trip31	trip76;																						
+set trip[rider3]:=	trip73;																									
+set trip[rider4]:=	trip5	trip6	trip61;																							
+set trip[rider5]:=	trip29	trip77	trip81;																							
+set trip[rider6]:=	trip1	trip2	trip7	trip8	trip10	trip16	trip18	trip19	trip50	trip51	trip52	trip53	trip62	trip67	trip68	trip69	trip80;									
+set trip[rider7]:=	trip44	trip45	trip63	trip64	trip71;																					
+set trip[rider8]:=	trip5	trip6	trip61;																							
+set trip[rider9]:=	trip61;																									
+set trip[rider10]:=	trip11	trip12	trip13	trip14	trip15	trip20	trip21	trip46	trip47	trip60	trip73;															
+set trip[rider11]:=	trip77	trip81;																								
+set trip[rider12]:=	trip3	trip4	trip31	trip76;																						
+set trip[rider13]:=	trip44	trip45	trip63;																							
+set trip[rider14]:=	trip71;																									
+set trip[rider15]:=	trip39	trip79;																								
+set trip[rider16]:=	trip61;																									
+set trip[rider17]:=	trip11	trip20	trip46	trip60	trip73;																					
+set trip[rider18]:=	trip1	trip2	trip50	trip53	trip69	trip80;																				
+set trip[rider19]:=	trip11	trip12	trip13	trip14	trip15	trip20	trip21	trip22	trip46	trip47	trip60	trip72	trip73;													
+set trip[rider20]:=	trip7	trip8	trip9	trip16	trip17	trip32	trip34	trip48	trip54	trip58;																
+set trip[rider21]:=	trip7	trip8	trip9	trip16	trip17	trip29	trip30	trip32	trip34	trip48	trip54	trip57	trip58	trip81;												
+set trip[rider22]:=	trip5	trip44	trip45	trip63	trip64	trip71;																				
+set trip[rider23]:=	trip11	trip12	trip13	trip14	trip15	trip20	trip21	trip46	trip47	trip60	trip73;															
+set trip[rider24]:=	trip44	trip45	trip63	trip64	trip71;																					
+set trip[rider25]:=	trip16	trip58;																								
+set trip[rider26]:=	trip29	trip30	trip54	trip55	trip57	trip77	trip78	trip81;																		
+set trip[rider27]:=	trip1	trip16	trip62;																							
+set trip[rider28]:=	trip27	trip28	trip36	trip37	trip38	trip39	trip40	trip48	trip49	trip79;																
+set trip[rider29]:=	trip25;																									
+set trip[rider30]:=	trip61;																									
+set trip[rider31]:=	trip5	trip6	trip44	trip45	trip61	trip63;																				
+set trip[rider32]:=	trip5	trip71;																								
+set trip[rider33]:=	trip71;																									
+set trip[rider34]:=	trip77	trip78	trip81;																							
+set trip[rider35]:=	trip29	trip30	trip54	trip55	trip57	trip77	trip78	trip81;																		
+set trip[rider36]:=	trip5	trip6	trip61	trip71;																						
+set trip[rider37]:=	trip1	trip16	trip62;																							
+set trip[rider38]:=	trip11	trip12	trip13	trip14	trip15	trip20	trip21	trip22	trip46	trip47	trip60	trip69	trip72	trip73;												
+set trip[rider39]:=	trip77;																									
+set trip[rider40]:=	trip1	trip7	trip16	trip32	trip36	trip48	trip50	trip54	trip58	trip79	trip80;															
+set trip[rider41]:=	trip11	trip13	trip46;																							
+set trip[rider42]:=	trip44	trip45	trip63	trip64	trip71;																					
+set trip[rider43]:=	trip67	trip69;																								
+set trip[rider44]:=	trip29	trip30	trip32	trip34	trip36	trip37	trip48	trip54	trip55	trip57	trip58	trip77	trip78	trip81;												
+set trip[rider45]:=	trip71;																									
+set trip[rider46]:=	trip29	trip30	trip32	trip34	trip36	trip37	trip48	trip54	trip58;																	
+set trip[rider47]:=	trip71;																									
+set trip[rider48]:=	trip11	trip12	trip13	trip14	trip15	trip20	trip21	trip46	trip47	trip60	trip73;															
+set trip[rider49]:=	trip29	trip32	trip36	trip48	trip54	trip58;																				
+set trip[rider50]:=	trip3	trip4	trip31	trip41	trip42	trip43	trip65	trip74	trip75	trip76;																
+set trip[rider51]:=	trip1	trip50	trip62	trip69	trip80;																					
+set trip[rider52]:=	trip73;																									
+set trip[rider53]:=	trip77;																									
+set trip[rider54]:=	trip11	trip12	trip13	trip14	trip15	trip20	trip21	trip22	trip46	trip47	trip60	trip69	trip72	trip73;												
+set trip[rider55]:=	trip1	trip16	trip62;																							
+set trip[rider56]:=	trip61;																									
+set trip[rider57]:=	trip3	trip4	trip31;																							
+set trip[rider58]:=	trip23	trip25	trip26	trip76;																						
+set trip[rider59]:=	trip27	trip28	trip36	trip38	trip39	trip79;																				
+set trip[rider60]:=	trip1	trip39	trip58	trip79;																						
+set trip[rider61]:=	trip5	trip44	trip45	trip63	trip64	trip71;																				
+set trip[rider62]:=	trip61;																									
+set trip[rider63]:=	trip1	trip7	trip8	trip9	trip10	trip16	trip17	trip18	trip19	trip32	trip33	trip34	trip35	trip48	trip50	trip51	trip53	trip58	trip59	trip62	trip80;					
+set trip[rider64]:=	trip5	trip44	trip61	trip63	trip71;																					
+set trip[rider65]:=	trip29	trip77	trip81;																							
+set trip[rider66]:=	trip1	trip16	trip58	trip62;																						
+set trip[rider67]:=	trip23	trip24	trip25	trip26	trip41	trip42	trip43	trip65	trip66	trip70	trip74	trip75	trip76;													
+set trip[rider68]:=	trip61;																									
+set trip[rider69]:=	trip61;																									
+set trip[rider70]:=	trip25;																									
+set trip[rider71]:=	trip5	trip71;																								
+set trip[rider72]:=	trip77	trip78	trip81;																							
+set trip[rider73]:=	trip5	trip44	trip45	trip63	trip64	trip71;																				
+set trip[rider74]:=	trip3	trip4	trip31	trip76;																						
+set trip[rider75]:=	trip25;																									
+set trip[rider76]:=	trip11	trip20	trip46	trip60	trip72	trip73;																				
+set trip[rider77]:=	trip27	trip28	trip36	trip38	trip39	trip79;																				
+set trip[rider78]:=	trip1	trip7	trip8	trip10	trip16	trip18	trip19	trip50	trip51	trip52	trip53	trip62	trip67	trip68	trip80;											
+set trip[rider79]:=	trip58	trip77;																								
+set trip[rider80]:=	trip41	trip65	trip74	trip76;																						
+set trip[rider81]:=	trip27	trip28	trip36	trip38	trip39	trip79;																				
+set trip[rider82]:=	trip44	trip45	trip63	trip64	trip71;																					
+set trip[rider83]:=	trip77;																									
+set trip[rider84]:=	trip77;																									
+set trip[rider85]:=	trip25;																									
+set trip[rider86]:=	trip5	trip6	trip44	trip45	trip61	trip63	trip64	trip71;																		
+set trip[rider87]:=	trip23	trip76;																								
+set trip[rider88]:=	trip11	trip12	trip13	trip14	trip15	trip20	trip21	trip46	trip47	trip60	trip73;															
+set trip[rider89]:=	trip27	trip28	trip36	trip38	trip39	trip79;																				
+set trip[rider90]:=	trip67	trip69;																								
+set trip[rider91]:=	trip5	trip6	trip61;																							
+set trip[rider92]:=	trip3	trip31	trip76;																							
+set trip[rider93]:=	trip1	trip2	trip39	trip50	trip53	trip69	trip80;																			
+set trip[rider94]:=	trip73;																									
+set trip[rider95]:=	trip1	trip2	trip39	trip69	trip79;																					
+set trip[rider96]:=	trip73;																									
+set trip[rider97]:=	trip1	trip2	trip39	trip69	trip79;																					
+set trip[rider98]:=	trip3	trip4	trip31;																							
+set trip[rider99]:=	trip77;																									
+set trip[rider100]:=	trip1	trip7	trip8	trip9	trip10	trip16	trip17	trip18	trip19	trip32	trip33	trip34	trip35	trip36	trip37	trip38	trip48	trip49	trip50	trip53	trip54	trip56	trip58	trip59	trip79	trip80;
+set trip[rider101]:=	trip61;																									
+set trip[rider102]:=	trip11	trip20	trip46	trip60	trip69	trip73;																				
+set trip[rider103]:=	trip11	trip13	trip46;																							
+set trip[rider104]:=	trip23	trip24	trip41	trip42	trip43	trip65	trip66	trip70	trip74	trip75	trip76;															
+set trip[rider105]:=	trip73;																									
+set trip[rider106]:=	trip1	trip16	trip58	trip62	trip79;																					
+set trip[rider107]:=	trip3	trip4	trip23	trip24	trip31	trip41	trip42	trip43	trip65	trip66	trip70	trip74	trip75	trip76;												
+set trip[rider108]:=	trip67;																									
+set trip[rider109]:=	trip60;																									
+set trip[rider110]:=	trip77;																									
+set trip[rider111]:=	trip61;																									
+set trip[rider112]:=	trip76;																									
+set trip[rider113]:=	trip39	trip79;																								
+set trip[rider114]:=	trip7	trip16	trip29	trip32	trip36	trip48	trip54	trip58	trip79;																	
+set trip[rider115]:=	trip5	trip71;																								
+set trip[rider116]:=	trip5	trip71;																								
+set trip[rider117]:=	trip1	trip16	trip58	trip79;																						
+set trip[rider118]:=	trip39;																									
+set trip[rider119]:=	trip67;																									
+set trip[rider120]:=	trip11	trip20	trip46	trip60	trip73;																					
+set trip[rider121]:=	trip69;																									
+set trip[rider122]:=	trip16	trip58;																								
+set trip[rider123]:=	trip61;																									
+set trip[rider124]:=	trip27	trip28	trip36	trip37	trip38	trip39	trip40	trip48	trip49	trip54	trip79;															
+set trip[rider125]:=	trip29	trip77	trip78	trip81;																						
+set trip[rider126]:=	trip3	trip4	trip31	trip76;																						
+set trip[rider127]:=	trip1	trip2	trip50	trip53	trip69	trip80;																				
+set trip[rider128]:=	trip27	trip36	trip39	trip79;																						
+set trip[rider129]:=	trip5	trip6	trip61;																							
+set trip[rider130]:=	trip3	trip4	trip23	trip25	trip26	trip31	trip76;																			
+set trip[rider131]:=	trip11	trip12	trip13	trip14	trip15	trip20	trip21	trip22	trip46	trip47	trip60	trip72	trip73;													
+set trip[rider132]:=	trip61;																									
+set trip[rider133]:=	trip3	trip4	trip31;																							
+set trip[rider134]:=	trip77;																									
+set trip[rider135]:=	trip27	trip36	trip54	trip79;																						
+set trip[rider136]:=	trip3	trip4	trip23	trip25	trip26	trip31	trip76;																			
+set trip[rider137]:=	trip44	trip63;																								
+set trip[rider138]:=	trip1	trip7	trip8	trip9	trip10	trip16	trip17	trip18	trip19	trip32	trip33	trip34	trip35	trip36	trip37	trip48	trip50	trip51	trip53	trip58	trip59	trip62	trip80;			
+set trip[rider139]:=	trip1	trip50	trip62	trip67	trip80;																					
+set trip[rider140]:=	trip3	trip4	trip23	trip24	trip25	trip26	trip31	trip41	trip42	trip43	trip65	trip66	trip70	trip74	trip75	trip76;										
+set trip[rider141]:=	trip1	trip7	trip8	trip9	trip10	trip16	trip17	trip18	trip19	trip32	trip33	trip34	trip35	trip36	trip37	trip48	trip50	trip51	trip53	trip54	trip56	trip58	trip59	trip62	trip80;	
+set trip[rider142]:=	trip60;																									
+set trip[rider143]:=	trip5	trip44	trip61	trip63	trip71;																					
+set trip[rider144]:=	trip73;																									
+set trip[rider145]:=	trip1	trip16	trip58	trip79;																						
+set trip[rider146]:=	trip73;																									
+set trip[rider147]:=	trip25;																									
+set trip[rider148]:=	trip62	trip67;																								
+set trip[rider149]:=	trip5	trip6	trip44	trip45	trip61	trip63	trip64	trip71;																		
+set trip[rider150]:=	trip39	trip79;																								
+set trip[rider151]:=	trip1	trip16	trip58	trip62;																						
+set trip[rider152]:=	trip5	trip6	trip44	trip45	trip61	trip63;																				
+set trip[rider153]:=	trip79;																									
+set trip[rider154]:=	trip11	trip13	trip46;																							
+set trip[rider155]:=	trip23	trip76;																								
+set trip[rider156]:=	trip25;																									
+set trip[rider157]:=	trip67;																									
+set trip[rider158]:=	trip1	trip2	trip50	trip53	trip69	trip80;																				
+set trip[rider159]:=	trip29	trip77	trip78	trip81;																						
+set trip[rider160]:=	trip27	trip36	trip39	trip79;																						
+set trip[rider161]:=	trip11	trip20	trip46	trip60;																						
+set trip[rider162]:=	trip67;																									
+set trip[rider163]:=	trip5	trip6	trip44	trip45	trip61	trip63;																				
+set trip[rider164]:=	trip77;																									
+set trip[rider165]:=	trip1	trip7	trip8	trip9	trip10	trip16	trip17	trip18	trip19	trip32	trip33	trip34	trip35	trip48	trip50	trip51	trip53	trip58	trip59	trip62	trip80;					
+set trip[rider166]:=	trip1	trip7	trip16	trip32	trip50	trip58	trip62	trip67	trip80;																	
+set trip[rider167]:=	trip5	trip6	trip61;																							
+set trip[rider168]:=	trip23	trip24	trip41	trip42	trip43	trip65	trip66	trip70	trip74	trip75	trip76;															
+set trip[rider169]:=	trip3	trip4	trip25	trip26	trip31	trip65	trip76;																			
+set trip[rider170]:=	trip3	trip4	trip31	trip41	trip42	trip43	trip65	trip74	trip75	trip76;																
+set trip[rider171]:=	trip5	trip61;																								
+set trip[rider172]:=	trip5	trip71;																								
+set trip[rider173]:=	trip1	trip16	trip58	trip62;																						
+set trip[rider174]:=	trip1	trip50	trip62	trip69	trip80;																					
+set trip[rider175]:=	trip11	trip12	trip13	trip14	trip15	trip20	trip21	trip46	trip47	trip60	trip73;															
+set trip[rider176]:=	trip67	trip68	trip80;																							
+set trip[rider177]:=	trip44	trip63	trip71;																							
+set trip[rider178]:=	trip1	trip50	trip62	trip69	trip80;																					
+set trip[rider179]:=	trip23	trip25	trip26	trip76;																						
+set trip[rider180]:=	trip11	trip20	trip46	trip60	trip72	trip73;																				
+set trip[rider181]:=	trip1	trip16	trip62;																							
+set trip[rider182]:=	trip77;																									
+set trip[rider183]:=	trip3	trip4	trip31;																							
+set trip[rider184]:=	trip5	trip71;																								
+set trip[rider185]:=	trip23	trip70;																								
+set trip[rider186]:=	trip27	trip39;																								
+set trip[rider187]:=	trip5	trip6	trip44	trip45	trip61	trip63;																				
+set trip[rider188]:=	trip27	trip36	trip39	trip79;																						
+set trip[rider189]:=	trip73;																									
+set trip[rider190]:=	trip77;																									
+set trip[rider191]:=	trip39	trip79;																								
+set trip[rider192]:=	trip11	trip12	trip13	trip14	trip15	trip20	trip21	trip22	trip46	trip47	trip60	trip69	trip72	trip73;												
+set trip[rider193]:=	trip39	trip79;																								
+set trip[rider194]:=	trip69;																									
+set trip[rider195]:=	trip1	trip2	trip16	trip58	trip62	trip69;																				
+set trip[rider196]:=	trip16	trip62;																								
+set trip[rider197]:=	trip44	trip45	trip63;																							
+set trip[rider198]:=	trip1	trip2	trip16	trip58	trip62	trip69;																				
+set trip[rider199]:=	trip11	trip12	trip13	trip14	trip20	trip21	trip46	trip60;																		
+set trip[rider200]:=	trip73;																									
+set trip[rider201]:=	trip3	trip31;																								
+set trip[rider202]:=	trip3	trip4	trip31	trip74;																						
+set trip[rider203]:=	trip62;																									
+set trip[rider204]:=	trip77;																									
+set trip[rider205]:=	trip5;																									
+set trip[rider206]:=	trip1	trip2	trip62	trip69;																						
+set trip[rider207]:=	trip5	trip44	trip61	trip63	trip71;																					
+set trip[rider208]:=	trip11	trip12	trip13	trip15	trip20	trip22	trip46	trip47	trip72	trip73;																
+set trip[rider209]:=	trip1	trip16	trip58	trip62;																						
+set trip[rider210]:=	trip71;																									
+set trip[rider211]:=	trip11	trip12	trip13	trip15	trip20	trip22	trip46	trip47	trip72	trip73;																
+set trip[rider212]:=	trip5	trip44	trip63	trip71;																						
+set trip[rider213]:=	trip1	trip2	trip7	trip8	trip10	trip16	trip18	trip19	trip50	trip51	trip52	trip53	trip62	trip67	trip68	trip69	trip80;									
+set trip[rider214]:=	trip29	trip30	trip32	trip34	trip36	trip37	trip48	trip54	trip55	trip57	trip58	trip77	trip78	trip81;												
+set trip[rider215]:=	trip27	trip36	trip48	trip54	trip79;																					
+set trip[rider216]:=	trip27	trip28	trip36	trip38	trip79;																					
+set trip[rider217]:=	trip3	trip4	trip23	trip25	trip26	trip31	trip76;																			
+set trip[rider218]:=	trip1	trip16	trip58	trip62;																						
+set trip[rider219]:=	trip67;																									
+set trip[rider220]:=	trip3	trip4	trip31;																							
+set trip[rider221]:=	trip1	trip16	trip62;																							
+set trip[rider222]:=	trip58	trip77;																								
+set trip[rider223]:=	trip73;																									
+set trip[rider224]:=	trip61;																									
+set trip[rider225]:=	trip1	trip2	trip16	trip58	trip62	trip69;																				
+set trip[rider226]:=	trip5;																									
+set trip[rider227]:=	trip11	trip46;																								
+set trip[rider228]:=	trip5	trip71;																								
+set trip[rider229]:=	trip11	trip12	trip13	trip14	trip20	trip21	trip46	trip60;																		
+set trip[rider230]:=	trip1	trip16	trip58	trip62;																						
+set trip[rider231]:=	trip27	trip36	trip39	trip48	trip54	trip79;																				
+set trip[rider232]:=	trip20	trip21	trip22	trip60	trip69	trip72;																				
+set trip[rider233]:=	trip77;																									
+set trip[rider234]:=	trip20	trip22	trip72	trip73;																						
+set trip[rider235]:=	trip27	trip39;																								
+set trip[rider236]:=	trip77;																									
+set trip[rider237]:=	trip3	trip4	trip23	trip24	trip25	trip26	trip31	trip41	trip42	trip43	trip65	trip66	trip70	trip74	trip75	trip76;										
+set trip[rider238]:=	trip39;																									
+set trip[rider239]:=	trip5	trip44	trip45	trip63	trip64	trip71;																				
+set trip[rider240]:=	trip11	trip12	trip13	trip14	trip15	trip20	trip21	trip22	trip46	trip47	trip60	trip72	trip73;													
+set trip[rider241]:=	trip3	trip4	trip31	trip76;																						
+set trip[rider242]:=	trip77;																									
+set trip[rider243]:=	trip29	trip30	trip54;																							
+set trip[rider244]:=	trip39;																									
+set trip[rider245]:=	trip58;																									
+set trip[rider246]:=	trip16	trip58	trip62;																							
+set trip[rider247]:=	trip20	trip21	trip22	trip60	trip69	trip72;																				
+set trip[rider248]:=	trip73;																									
+set trip[rider249]:=	trip1	trip27	trip28	trip36	trip37	trip38	trip39	trip40	trip48	trip49	trip50	trip53	trip79	trip80;												
+set trip[rider250]:=	trip1	trip2	trip39	trip69	trip79;																					
+set trip[rider251]:=	trip20	trip21	trip60	trip73;																						
+set trip[rider252]:=	trip61;																									
+set trip[rider253]:=	trip11	trip12	trip13	trip14	trip15	trip20	trip21	trip46	trip47	trip60	trip73;															
+set trip[rider254]:=	trip5	trip44	trip63	trip71;																						
+set trip[rider255]:=	trip5;																									
+set trip[rider256]:=	trip3	trip4	trip23	trip25	trip26	trip31	trip76;																			
+set trip[rider257]:=	trip1	trip16	trip62;																							
+set trip[rider258]:=	trip29	trip32	trip36	trip48	trip54	trip58;																				
+set trip[rider259]:=	trip58	trip79;																								
+set trip[rider260]:=	trip3	trip4	trip23	trip25	trip26	trip31	trip76;																			
+set trip[rider261]:=	trip73;																									
+set trip[rider262]:=	trip61;																									
+set trip[rider263]:=	trip29	trip30	trip48	trip54	trip55	trip57	trip77	trip78	trip81;																	
+set trip[rider264]:=	trip5	trip6	trip44	trip45	trip61	trip63	trip64	trip71;																		
+set trip[rider265]:=	trip3	trip4	trip31;																							
+set trip[rider266]:=	trip1	trip2	trip69;																							
+set trip[rider267]:=	trip5	trip44	trip61	trip63	trip71;																					
+set trip[rider268]:=	trip16	trip58	trip62;																							
+set trip[rider269]:=	trip39	trip79;																								
+set trip[rider270]:=	trip1	trip2	trip50	trip53	trip69	trip80;																				
+set trip[rider271]:=	trip73;																									
+set trip[rider272]:=	trip23	trip25	trip26	trip76;																						
+set trip[rider273]:=	trip39	trip79;																								
+set trip[rider274]:=	trip11	trip12	trip13	trip14	trip20	trip21	trip22	trip46	trip60	trip69	trip72;															
+set trip[rider275]:=	trip1	trip2	trip69;																							
+set trip[rider276]:=	trip3	trip4	trip23	trip25	trip26	trip31	trip76;																			
+set trip[rider277]:=	trip1	trip2	trip69;																							
+set trip[rider278]:=	trip3	trip4	trip31;																							
+set trip[rider279]:=	trip77;																									
+set trip[rider280]:=	trip3	trip4	trip23	trip25	trip26	trip31	trip76;																			
+set trip[rider281]:=	trip5	trip6	trip61;																							
+set trip[rider282]:=	trip1	trip7	trip8	trip9	trip16	trip17	trip32	trip34	trip36	trip37	trip38	trip48	trip49	trip54	trip58	trip79;										
+set trip[rider283]:=	trip1	trip7	trip8	trip9	trip10	trip16	trip17	trip18	trip19	trip32	trip33	trip34	trip35	trip48	trip50	trip51	trip53	trip58	trip59	trip62	trip80;					
+set trip[rider284]:=	trip1	trip16	trip62;																							
+set trip[rider285]:=	trip77;																									
+set trip[rider286]:=	trip61;																									
+set trip[rider287]:=	trip1	trip16	trip62;																							
+set trip[rider288]:=	trip23	trip76;																								
+set trip[rider289]:=	trip5	trip6	trip61;																							
+set trip[rider290]:=	trip23	trip76;																								
+set trip[rider291]:=	trip11	trip13	trip46;																							
+set trip[rider292]:=	trip29	trip77	trip78	trip81;																						
+set trip[rider293]:=	trip44	trip63	trip71;																							
+set trip[rider294]:=	trip3	trip4	trip23	trip25	trip26	trip31	trip76;																			
+set trip[rider295]:=	trip23	trip76;																								
+set trip[rider296]:=	trip5	trip44	trip61	trip63;																						
+set trip[rider297]:=	trip1	trip2	trip69;																							
+set trip[rider298]:=	trip1	trip2	trip69	trip79;																						
+set trip[rider299]:=	trip5	trip44	trip63	trip71;																						
+set trip[rider300]:=	trip23	trip25	trip26	trip76;																						
+set trip[rider301]:=	trip39;																									
+set trip[rider302]:=	trip39;																									
+set trip[rider303]:=	trip77;																									
+set trip[rider304]:=	trip39;																									
+set trip[rider305]:=	trip1	trip62;																								
+set trip[rider306]:=	trip27	trip28	trip29	trip30	trip36	trip38	trip54	trip79;																		
+set trip[rider307]:=	trip3;																									
+set trip[rider308]:=	trip1	trip16	trip58	trip62;																						
+set trip[rider309]:=	trip44	trip45	trip63;																							
+set trip[rider310]:=	trip39	trip79;																								
+set trip[rider311]:=	trip69;																									
+set trip[rider312]:=	trip23	trip25	trip26	trip76;																						
+set trip[rider313]:=	trip39	trip79;																								
+set trip[rider314]:=	trip16	trip58	trip79;																							
+set trip[rider315]:=	trip7	trip8	trip9	trip16	trip17	trip32	trip34	trip48	trip54	trip58	trip62;															
+set trip[rider316]:=	trip1	trip16	trip58	trip62;																						
+set trip[rider317]:=	trip1	trip16	trip62;																							
+set trip[rider318]:=	trip5	trip44	trip45	trip63;																						
+set trip[rider319]:=	trip77;																									
+set trip[rider320]:=	trip3	trip4	trip23	trip25	trip26	trip31	trip76;																			
+set trip[rider321]:=	trip62;																									
+set trip[rider322]:=	trip3	trip4	trip31	trip76;																						
+set trip[rider323]:=	trip16	trip62;																								
+set trip[rider324]:=	trip1	trip16	trip58;																							
+set trip[rider325]:=	trip3	trip4	trip23	trip25	trip26	trip31	trip76;																			
+set trip[rider326]:=	trip3	trip4	trip31	trip76;																						
+set trip[rider327]:=	trip16	trip58	trip62;																							
+set trip[rider328]:=	trip23	trip25	trip26	trip76;																						
+set trip[rider329]:=	trip23;																									
+set trip[rider330]:=	trip77;																									
+set trip[rider331]:=	trip61;																									
+set trip[rider332]:=	trip11	trip12	trip13	trip14	trip15	trip20	trip21	trip46	trip47	trip60	trip73;															
+set trip[rider333]:=	trip76;																																																																												
+param cost :=	[rider1,*]:=
+trip20	43.21
+trip60	44.15
+trip69	51.49
+	[rider2,*]:=
+trip3	35.14
+trip4	41.97
+trip31	34.89
+trip76	39.39
+	[rider3,*]:=
+trip73	19.82
+	[rider4,*]:=
+trip5	19.03
+trip6	30.28
+trip61	18.66
+	[rider5,*]:=
+trip29	52.42
+trip77	52.93
+trip81	58.7
+	[rider6,*]:=
+trip1	56.82
+trip2	73.73
+trip7	68.9
+trip8	83.76
+trip10	84.56
+trip16	58.87
+trip18	87.13
+trip19	87.66
+trip50	68.52
+trip51	76.96
+trip52	86.1
+trip53	89.94
+trip62	56.48
+trip67	58.92
+trip68	86.63
+trip69	64.18
+trip80	69.06
+	[rider7,*]:=
+trip44	26.51
+trip45	33.96
+trip63	24.87
+trip64	34.66
+trip71	16.42
+	[rider8,*]:=
+trip5	43.25
+trip6	56.41
+trip61	45.08
+	[rider9,*]:=
+trip61	18.28
+	[rider10,*]:=
+trip11	42.31
+trip12	55.73
+trip13	55.83
+trip14	48.61
+trip15	54.45
+trip20	37.51
+trip21	43.83
+trip46	39.13
+trip47	46.08
+trip60	28.08
+trip73	37.75
+	[rider11,*]:=
+trip77	45.48
+trip81	52.27
+	[rider12,*]:=
+trip3	23.59
+trip4	30.24
+trip31	23.34
+trip76	28.03
+	[rider13,*]:=
+trip44	44.85
+trip45	51.2
+trip63	43.69
+	[rider14,*]:=
+trip71	39.8
+	[rider15,*]:=
+trip39	48.52
+trip79	41.18
+	[rider16,*]:=
+trip61	35.73
+	[rider17,*]:=
+trip11	51.23
+trip20	50.2
+trip46	47.3
+trip60	53.14
+trip73	48.73
+	[rider18,*]:=
+trip1	15.72
+trip2	33.62
+trip50	30.82
+trip53	54.69
+trip69	23.82
+trip80	31.49
+	[rider19,*]:=
+trip11	39.51
+trip12	55.94
+trip13	52.97
+trip14	48.62
+trip15	54.51
+trip20	38.14
+trip21	47.61
+trip22	57.52
+trip46	36.59
+trip47	46.76
+trip60	40.17
+trip72	45.06
+trip73	38.13
+	[rider20,*]:=
+trip7	21.94
+trip8	35.21
+trip9	38.39
+trip16	12.97
+trip17	37.17
+trip32	21.45
+trip34	34.8
+trip48	21.35
+trip54	23.28
+trip58	13.61
+	[rider21,*]:=
+trip7	23.42
+trip8	36.65
+trip9	38.86
+trip16	14.58
+trip17	38.55
+trip29	23.42
+trip30	41.7
+trip32	21.46
+trip34	34.8
+trip48	20.62
+trip54	22.35
+trip57	36.08
+trip58	13.77
+trip81	25.03
+	[rider22,*]:=
+trip5	20.42
+trip44	16.85
+trip45	22.68
+trip63	15.32
+trip64	22.01
+trip71	10.99
+	[rider23,*]:=
+trip11	28.37
+trip12	44.82
+trip13	45.87
+trip14	46.11
+trip15	47.01
+trip20	21.32
+trip21	31.45
+trip46	24.24
+trip47	35.45
+trip60	22.44
+trip73	25.38
+	[rider24,*]:=
+trip44	36.58
+trip45	43.44
+trip63	35.07
+trip64	42.75
+trip71	34.07
+	[rider25,*]:=
+trip16	16.17
+trip58	15.73
+	[rider26,*]:=
+trip29	21.28
+trip30	43.17
+trip54	22.97
+trip55	30.37
+trip57	37.17
+trip77	18.63
+trip78	33.83
+trip81	26
+	[rider27,*]:=
+trip1	13.63
+trip16	15.93
+trip62	11.11
+	[rider28,*]:=
+trip27	49.44
+trip28	58.34
+trip36	39.85
+trip37	68.37
+trip38	47.96
+trip39	39.77
+trip40	66.72
+trip48	52.07
+trip49	60.97
+trip79	29.69
+	[rider29,*]:=
+trip25	33.92
+	[rider30,*]:=
+trip61	19.96
+	[rider31,*]:=
+trip5	29.51
+trip6	40.87
+trip44	31.08
+trip45	36.93
+trip61	32.55
+trip63	29.62
+	[rider32,*]:=
+trip5	39.65
+trip71	25.08
+	[rider33,*]:=
+trip71	29.21
+	[rider34,*]:=
+trip77	30.42
+trip78	45.63
+trip81	37.59
+	[rider35,*]:=
+trip29	19.08
+trip30	42.51
+trip54	23.04
+trip55	30.55
+trip57	36.92
+trip77	14.39
+trip78	29.23
+trip81	20.49
+	[rider36,*]:=
+trip5	35.54
+trip6	47.61
+trip61	38.79
+trip71	27.28
+	[rider37,*]:=
+trip1	36.11
+trip16	41.96
+trip62	27.82
+	[rider38,*]:=
+trip11	44.83
+trip12	62.93
+trip13	60.32
+trip14	55.11
+trip15	62.18
+trip20	42.03
+trip21	52.65
+trip22	57.59
+trip46	41.2
+trip47	52.31
+trip60	44.42
+trip69	46.63
+trip72	39
+trip73	43.06
+	[rider39,*]:=
+trip77	18.83
+	[rider40,*]:=
+trip1	41.41
+trip7	44.48
+trip16	40.54
+trip32	44.79
+trip36	49.79
+trip48	45.06
+trip50	49.28
+trip54	45.24
+trip58	34.24
+trip79	39.34
+trip80	49.66
+	[rider41,*]:=
+trip11	20.25
+trip13	36.87
+trip46	16.8
+	[rider42,*]:=
+trip44	33.41
+trip45	40.48
+trip63	31.42
+trip64	38.8
+trip71	29.32
+	[rider43,*]:=
+trip67	50.58
+trip69	55.73
+	[rider44,*]:=
+trip29	26.42
+trip30	48.46
+trip32	35.56
+trip34	48.13
+trip36	36.1
+trip37	48.85
+trip48	31.8
+trip54	30.76
+trip55	37.93
+trip57	43.62
+trip58	29.89
+trip77	25.15
+trip78	38.85
+trip81	30.7
+	[rider45,*]:=
+trip71	30.06
+	[rider46,*]:=
+trip29	57.35
+trip30	80.96
+trip32	53.87
+trip34	68.87
+trip36	59.51
+trip37	68.59
+trip48	54.1
+trip54	56.17
+trip58	45.66
+	[rider47,*]:=
+trip71	11.61
+	[rider48,*]:=
+trip11	45.9
+trip12	61.13
+trip13	62.96
+trip14	57.63
+trip15	61.18
+trip20	38.03
+trip21	48.52
+trip46	43.82
+trip47	51.1
+trip60	39.41
+trip73	42.04
+	[rider49,*]:=
+trip29	63.37
+trip32	70.59
+trip36	67.86
+trip48	66.07
+trip54	64.58
+trip58	63.54
+	[rider50,*]:=
+trip3	11.7
+trip4	19.58
+trip31	11.48
+trip41	20.62
+trip42	30.85
+trip43	37.27
+trip65	23.65
+trip74	24.75
+trip75	41.44
+trip76	19.51
+	[rider51,*]:=
+trip1	48.15
+trip50	60.83
+trip62	51.27
+trip69	53.04
+trip80	61.39
+	[rider52,*]:=
+trip73	34.39
+	[rider53,*]:=
+trip77	16.56
+	[rider54,*]:=
+trip11	41.76
+trip12	56
+trip13	56.08
+trip14	59.93
+trip15	54.66
+trip20	36.83
+trip21	46.77
+trip22	51.73
+trip46	38.49
+trip47	46.01
+trip60	38.46
+trip69	38.87
+trip72	42.92
+trip73	37.07
+	[rider55,*]:=
+trip1	41.63
+trip16	46.86
+trip62	37.46
+	[rider56,*]:=
+trip61	43.72
+	[rider57,*]:=
+trip3	36.79
+trip4	42.69
+trip31	36.49
+	[rider58,*]:=
+trip23	19
+trip25	13.46
+trip26	35.07
+trip76	19.31
+	[rider59,*]:=
+trip27	42.85
+trip28	51.48
+trip36	46.48
+trip38	56.63
+trip39	32.83
+trip79	31.75
+	[rider60,*]:=
+trip1	16.18
+trip39	19.14
+trip58	21.99
+trip79	12.08
+	[rider61,*]:=
+trip5	17.37
+trip44	20.15
+trip45	26.48
+trip63	18.66
+trip64	25.7
+trip71	10.01
+	[rider62,*]:=
+trip61	21.3
+	[rider63,*]:=
+trip1	52.37
+trip7	67.04
+trip8	82.79
+trip9	86.82
+trip10	82.39
+trip16	56
+trip17	85.25
+trip18	75
+trip19	87.11
+trip32	65.99
+trip33	83.03
+trip34	82.49
+trip35	88.3
+trip48	64.21
+trip50	65.31
+trip51	79.21
+trip53	88.11
+trip58	57.62
+trip59	71.63
+trip62	50.28
+trip80	65.89
+	[rider64,*]:=
+trip5	43.52
+trip44	43.86
+trip61	45.27
+trip63	42.39
+trip71	36.92
+	[rider65,*]:=
+trip29	56.34
+trip77	48.8
+trip81	56.72
+	[rider66,*]:=
+trip1	21.94
+trip16	21.62
+trip58	22.32
+trip62	23.08
+	[rider67,*]:=
+trip23	31.76
+trip24	49.14
+trip25	26.07
+trip26	45.94
+trip41	33.61
+trip42	44.7
+trip43	49.23
+trip65	35.44
+trip66	49.51
+trip70	37.1
+trip74	38.42
+trip75	57.08
+trip76	31.52
+	[rider68,*]:=
+trip61	46.66
+	[rider69,*]:=
+trip61	54.11
+	[rider70,*]:=
+trip25	18.39
+	[rider71,*]:=
+trip5	21.94
+trip71	12.93
+	[rider72,*]:=
+trip77	45.25
+trip78	61.31
+trip81	41.08
+	[rider73,*]:=
+trip5	20.46
+trip44	18.96
+trip45	25.35
+trip63	17.45
+trip64	24.65
+trip71	10.14
+	[rider74,*]:=
+trip3	9.9
+trip4	15.94
+trip31	9.58
+trip76	20.42
+	[rider75,*]:=
+trip25	14.25
+	[rider76,*]:=
+trip11	42.96
+trip20	40.03
+trip46	39.3
+trip60	42.63
+trip72	46.83
+trip73	38.17
+	[rider77,*]:=
+trip27	52.01
+trip28	59.24
+trip36	53.99
+trip38	64.08
+trip39	47.46
+trip79	40.8
+	[rider78,*]:=
+trip1	54.73
+trip7	71.24
+trip8	88.21
+trip10	89.04
+trip16	60.04
+trip18	92.01
+trip19	92.61
+trip50	70.7
+trip51	80.55
+trip52	96.3
+trip53	93.79
+trip62	45.1
+trip67	65.54
+trip68	96.89
+trip80	71.3
+	[rider79,*]:=
+trip58	32.62
+trip77	32.24
+	[rider80,*]:=
+trip41	63.44
+trip65	65.18
+trip74	67.66
+trip76	60.85
+	[rider81,*]:=
+trip27	42.82
+trip28	49.61
+trip36	45
+trip38	54.31
+trip39	37.25
+trip79	32.13
+	[rider82,*]:=
+trip44	37.42
+trip45	43.92
+trip63	35.93
+trip64	43.15
+trip71	29.41
+	[rider83,*]:=
+trip77	46.34
+	[rider84,*]:=
+trip77	16.13
+	[rider85,*]:=
+trip25	17.52
+	[rider86,*]:=
+trip5	14.49
+trip6	25.28
+trip44	16.56
+trip45	22.79
+trip61	17.21
+trip63	15.08
+trip64	21.87
+trip71	10.1
+	[rider87,*]:=
+trip23	25.03
+trip76	18.73
+	[rider88,*]:=
+trip11	27.96
+trip12	42.86
+trip13	48.54
+trip14	43.06
+trip15	46.13
+trip20	22.83
+trip21	33.77
+trip46	29.48
+trip47	36.25
+trip60	26.01
+trip73	27.07
+	[rider89,*]:=
+trip27	50.11
+trip28	65.61
+trip36	54.08
+trip38	68.83
+trip39	44.61
+trip79	36.21
+	[rider90,*]:=
+trip67	37.85
+trip69	35.15
+	[rider91,*]:=
+trip5	28.65
+trip6	42.56
+trip61	31.58
+	[rider92,*]:=
+trip3	36.63
+trip31	32.61
+trip76	44.15
+	[rider93,*]:=
+trip1	52.25
+trip2	72.58
+trip39	55.72
+trip50	58
+trip53	79.41
+trip69	56.85
+trip80	58.1
+	[rider94,*]:=
+trip73	18.01
+	[rider95,*]:=
+trip1	32.11
+trip2	45.83
+trip39	34.56
+trip69	37.17
+trip79	32.44
+	[rider96,*]:=
+trip73	49.48
+	[rider97,*]:=
+trip1	26.86
+trip2	46.45
+trip39	28.3
+trip69	36.28
+trip79	25
+	[rider98,*]:=
+trip3	39.08
+trip4	45.18
+trip31	38.82
+	[rider99,*]:=
+trip77	15.77
+	[rider100,*]:=
+trip1	35.87
+trip7	48.55
+trip8	62.17
+trip9	65.1
+trip10	60.07
+trip16	40.38
+trip17	63.9
+trip18	54.59
+trip19	65.3
+trip32	47.54
+trip33	60.51
+trip34	61.52
+trip35	64.39
+trip36	48.3
+trip37	58.69
+trip38	57.86
+trip48	44.72
+trip49	58.61
+trip50	45.52
+trip53	65.17
+trip54	48.2
+trip56	60.76
+trip58	41.54
+trip59	52.28
+trip79	36.58
+trip80	45.96
+	[rider101,*]:=
+trip61	45.83
+	[rider102,*]:=
+trip11	66.51
+trip20	63.25
+trip46	62.61
+trip60	66.14
+trip69	71.25
+trip73	60.66
+	[rider103,*]:=
+trip11	28.87
+trip13	44.73
+trip46	26.1
+	[rider104,*]:=
+trip23	62.01
+trip24	78.24
+trip41	60.65
+trip42	70.58
+trip43	77.73
+trip65	62.15
+trip66	78.38
+trip70	67.07
+trip74	64.96
+trip75	82.49
+trip76	58.42
+	[rider105,*]:=
+trip73	46.45
+	[rider106,*]:=
+trip1	36.11
+trip16	41.15
+trip58	45.85
+trip62	35.55
+trip79	41.51
+	[rider107,*]:=
+trip3	10.83
+trip4	17
+trip23	20.83
+trip24	38.24
+trip31	10.55
+trip41	17.31
+trip42	27.56
+trip43	33.87
+trip65	20.59
+trip66	38.83
+trip70	26.45
+trip74	21.41
+trip75	38.03
+trip76	16.83
+	[rider108,*]:=
+trip67	53.75
+	[rider109,*]:=
+trip60	58.01
+	[rider110,*]:=
+trip77	16.06
+	[rider111,*]:=
+trip61	19.41
+	[rider112,*]:=
+trip76	23.92
+	[rider113,*]:=
+trip39	17.55
+trip79	11.08
+	[rider114,*]:=
+trip7	59.3
+trip16	48.93
+trip29	62.27
+trip32	58.72
+trip36	64.48
+trip48	59.01
+trip54	61.13
+trip58	50.11
+trip79	51.13
+	[rider115,*]:=
+trip5	20.93
+trip71	12.58
+	[rider116,*]:=
+trip5	52.48
+trip71	44.63
+	[rider117,*]:=
+trip1	33.82
+trip16	35.86
+trip58	37.34
+trip79	30.13
+	[rider118,*]:=
+trip39	31.59
+	[rider119,*]:=
+trip67	64.96
+	[rider120,*]:=
+trip11	58.18
+trip20	51.7
+trip46	54.06
+trip60	54.34
+trip73	51.92
+	[rider121,*]:=
+trip69	18.61
+	[rider122,*]:=
+trip16	18.38
+trip58	21.59
+	[rider123,*]:=
+trip61	54.82
+	[rider124,*]:=
+trip27	55.79
+trip28	64.9
+trip36	58.92
+trip37	74.97
+trip38	64.65
+trip39	45.3
+trip40	81.56
+trip48	57.79
+trip49	61.38
+trip54	58.77
+trip79	42.18
+	[rider125,*]:=
+trip29	18.92
+trip77	13.69
+trip78	28.11
+trip81	19.41
+	[rider126,*]:=
+trip3	10.73
+trip4	17.35
+trip31	10.41
+trip76	21.96
+	[rider127,*]:=
+trip1	57.27
+trip2	72.63
+trip50	69.38
+trip53	91.79
+trip69	62.2
+trip80	69.93
+	[rider128,*]:=
+trip27	61.24
+trip36	61.83
+trip39	50.68
+trip79	47.83
+	[rider129,*]:=
+trip5	22.07
+trip6	35.56
+trip61	20.56
+	[rider130,*]:=
+trip3	14.42
+trip4	22.01
+trip23	19.86
+trip25	14.51
+trip26	27.93
+trip31	14.17
+trip76	16.15
+	[rider131,*]:=
+trip11	54.54
+trip12	69.77
+trip13	67.44
+trip14	63.38
+trip15	67.31
+trip20	52.73
+trip21	61.9
+trip22	66.25
+trip46	51.72
+trip47	60.1
+trip60	54.42
+trip72	57.72
+trip73	51.59
+	[rider132,*]:=
+trip61	18.56
+	[rider133,*]:=
+trip3	46.21
+trip4	51.85
+trip31	46
+	[rider134,*]:=
+trip77	36.66
+	[rider135,*]:=
+trip27	64.14
+trip36	66.34
+trip54	67.38
+trip79	53.52
+	[rider136,*]:=
+trip3	15.32
+trip4	21.85
+trip23	19.83
+trip25	14.68
+trip26	30.8
+trip31	15.06
+trip76	17.65
+	[rider137,*]:=
+trip44	53.41
+trip63	51.92
+	[rider138,*]:=
+trip1	47.79
+trip7	61.07
+trip8	75.87
+trip9	79.52
+trip10	75.66
+trip16	51.14
+trip17	78.07
+trip18	68.99
+trip19	79.75
+trip32	62.01
+trip33	76.23
+trip34	77.45
+trip35	80.96
+trip36	60.99
+trip37	73.55
+trip48	58.56
+trip50	59.65
+trip51	68.1
+trip53	81.31
+trip58	54.62
+trip59	66.49
+trip62	50.37
+trip80	60.17
+	[rider139,*]:=
+trip1	33.18
+trip50	45.73
+trip62	36.03
+trip67	46.34
+trip80	45.99
+	[rider140,*]:=
+trip3	50.24
+trip4	55.96
+trip23	57.13
+trip24	74.45
+trip25	47.03
+trip26	67.46
+trip31	49.97
+trip41	58.38
+trip42	67.14
+trip43	77.24
+trip65	59.96
+trip66	75.35
+trip70	63.08
+trip74	61.48
+trip75	81.97
+trip76	55.65
+	[rider141,*]:=
+trip1	25.15
+trip7	30.07
+trip8	44
+trip9	46.75
+trip10	49.45
+trip16	22.25
+trip17	45.86
+trip18	46.87
+trip19	47.34
+trip32	33.41
+trip33	50.72
+trip34	46.92
+trip35	54.85
+trip36	38.17
+trip37	50.75
+trip48	32.48
+trip50	36.18
+trip51	43.52
+trip53	55.8
+trip54	35.9
+trip56	51.1
+trip58	26.18
+trip59	53.54
+trip62	24.17
+trip80	36.63
+	[rider142,*]:=
+trip60	50.93
+	[rider143,*]:=
+trip5	38.37
+trip44	39.01
+trip61	41.18
+trip63	37.55
+trip71	30.23
+	[rider144,*]:=
+trip73	55.15
+	[rider145,*]:=
+trip1	14.1
+trip16	16.14
+trip58	18.82
+trip79	13.58
+	[rider146,*]:=
+trip73	42.63
+	[rider147,*]:=
+trip25	12.69
+	[rider148,*]:=
+trip62	30.79
+trip67	39.44
+	[rider149,*]:=
+trip5	41.76
+trip6	55.03
+trip44	44.45
+trip45	51.59
+trip61	42.82
+trip63	43.25
+trip64	52.76
+trip71	34.75
+	[rider150,*]:=
+trip39	15.73
+trip79	13.18
+	[rider151,*]:=
+trip1	15.28
+trip16	17.11
+trip58	20.38
+trip62	17.04
+	[rider152,*]:=
+trip5	20.23
+trip6	34.13
+trip44	17.17
+trip45	23.62
+trip61	20.77
+trip63	15.66
+	[rider153,*]:=
+trip79	44.32
+	[rider154,*]:=
+trip11	23.15
+trip13	40.9
+trip46	17.54
+	[rider155,*]:=
+trip23	23.17
+trip76	19.97
+	[rider156,*]:=
+trip25	24.97
+	[rider157,*]:=
+trip67	56.17
+	[rider158,*]:=
+trip1	22.97
+trip2	50.14
+trip50	32.01
+trip53	63.73
+trip69	44.3
+trip80	32.11
+	[rider159,*]:=
+trip29	19.04
+trip77	12.72
+trip78	27.2
+trip81	19.66
+	[rider160,*]:=
+trip27	74.37
+trip36	77.7
+trip39	64.14
+trip79	63.04
+	[rider161,*]:=
+trip11	40.65
+trip20	42.06
+trip46	38.32
+trip60	44.32
+	[rider162,*]:=
+trip67	22.31
+	[rider163,*]:=
+trip5	33.32
+trip6	46.61
+trip44	35.76
+trip45	42.76
+trip61	29.82
+trip63	34.28
+	[rider164,*]:=
+trip77	18.17
+	[rider165,*]:=
+trip1	39.8
+trip7	48.58
+trip8	62.73
+trip9	65.3
+trip10	67.49
+trip16	38.8
+trip17	64.87
+trip18	66.01
+trip19	66.54
+trip32	46.39
+trip33	68.04
+trip34	61.04
+trip35	78.25
+trip48	45.72
+trip50	52.15
+trip51	65.7
+trip53	72.99
+trip58	38.13
+trip59	68.46
+trip62	39.89
+trip80	52.68
+	[rider166,*]:=
+trip1	40.87
+trip7	59.15
+trip16	48.63
+trip32	59.82
+trip50	53.18
+trip58	51.92
+trip62	43.23
+trip67	49.92
+trip80	53.68
+	[rider167,*]:=
+trip5	50.62
+trip6	65.31
+trip61	45.61
+	[rider168,*]:=
+trip23	47.13
+trip24	83.96
+trip41	50.77
+trip42	60.49
+trip43	73.93
+trip65	40.86
+trip66	64.31
+trip70	55.99
+trip74	54.86
+trip75	77.92
+trip76	46.58
+	[rider169,*]:=
+trip3	27.11
+trip4	34
+trip25	26.03
+trip26	39.13
+trip31	26.87
+trip65	33.39
+trip76	29.35
+	[rider170,*]:=
+trip3	23.35
+trip4	29.89
+trip31	23.07
+trip41	33.7
+trip42	44.06
+trip43	51.87
+trip65	36.68
+trip74	37.65
+trip75	60.44
+trip76	32.01
+	[rider171,*]:=
+trip5	48.93
+trip61	46.75
+	[rider172,*]:=
+trip5	55.79
+trip71	38.99
+	[rider173,*]:=
+trip1	12.04
+trip16	18.59
+trip58	21.99
+trip62	14.72
+	[rider174,*]:=
+trip1	36.32
+trip50	48.58
+trip62	37.85
+trip69	46.32
+trip80	49.08
+	[rider175,*]:=
+trip11	19.23
+trip12	32.14
+trip13	38.03
+trip14	30.96
+trip15	41.48
+trip20	19.06
+trip21	31.11
+trip46	15.72
+trip47	29.28
+trip60	22.41
+trip73	19.17
+	[rider176,*]:=
+trip67	28.35
+trip68	47.51
+trip80	27.94
+	[rider177,*]:=
+trip44	42.07
+trip63	40.9
+trip71	32.68
+	[rider178,*]:=
+trip1	41.73
+trip50	51.69
+trip62	41.49
+trip69	43.92
+trip80	52.14
+	[rider179,*]:=
+trip23	37.85
+trip25	30.27
+trip26	43.72
+trip76	34.13
+	[rider180,*]:=
+trip11	46.89
+trip20	45.03
+trip46	43.27
+trip60	47.83
+trip72	51.44
+trip73	44.99
+	[rider181,*]:=
+trip1	13.76
+trip16	16.08
+trip62	11.18
+	[rider182,*]:=
+trip77	32.97
+	[rider183,*]:=
+trip3	18.14
+trip4	24.85
+trip31	17.85
+	[rider184,*]:=
+trip5	68.31
+trip71	58.63
+	[rider185,*]:=
+trip23	70.13
+trip70	75.97
+	[rider186,*]:=
+trip27	31.37
+trip39	24.85
+	[rider187,*]:=
+trip5	24.51
+trip6	38
+trip44	28.8
+trip45	35.46
+trip61	28.87
+trip63	27.3
+	[rider188,*]:=
+trip27	57.37
+trip36	60.93
+trip39	45.34
+trip79	46.41
+	[rider189,*]:=
+trip73	19.89
+	[rider190,*]:=
+trip77	40.68
+	[rider191,*]:=
+trip39	15.65
+trip79	12.72
+	[rider192,*]:=
+trip11	40.62
+trip12	59.27
+trip13	56.63
+trip14	51.06
+trip15	54.9
+trip20	37.51
+trip21	48.3
+trip22	53.59
+trip46	36.75
+trip47	42.37
+trip60	40.37
+trip69	46.46
+trip72	44.72
+trip73	35.01
+	[rider193,*]:=
+trip39	15.24
+trip79	12.46
+	[rider194,*]:=
+trip69	29.55
+	[rider195,*]:=
+trip1	11.15
+trip2	32.96
+trip16	17.2
+trip58	19.94
+trip62	13.7
+trip69	23.61
+	[rider196,*]:=
+trip16	17.25
+trip62	12.65
+	[rider197,*]:=
+trip44	19.24
+trip45	25.93
+trip63	17.75
+	[rider198,*]:=
+trip1	9.04
+trip2	34.51
+trip16	17.7
+trip58	20.9
+trip62	13.13
+trip69	24.03
+	[rider199,*]:=
+trip11	43.51
+trip12	59.61
+trip13	62.27
+trip14	64.54
+trip20	34.14
+trip21	44.63
+trip46	38.73
+trip60	36.04
+	[rider200,*]:=
+trip73	35.85
+	[rider201,*]:=
+trip3	56.59
+trip31	56.38
+	[rider202,*]:=
+trip3	20.72
+trip4	26.28
+trip31	20.51
+trip74	35.24
+	[rider203,*]:=
+trip62	11.76
+	[rider204,*]:=
+trip77	19.94
+	[rider205,*]:=
+trip5	26.68
+	[rider206,*]:=
+trip1	13.27
+trip2	35.99
+trip62	14.63
+trip69	25.23
+	[rider207,*]:=
+trip5	59.49
+trip44	61.55
+trip61	63.1
+trip63	60.07
+trip71	51.8
+	[rider208,*]:=
+trip11	18.99
+trip12	30.62
+trip13	34.85
+trip15	36.59
+trip20	18.61
+trip22	34.17
+trip46	15.94
+trip47	26.86
+trip72	25.2
+trip73	17.69
+	[rider209,*]:=
+trip1	18.37
+trip16	24.85
+trip58	28.66
+trip62	20.82
+	[rider210,*]:=
+trip71	39.15
+	[rider211,*]:=
+trip11	41.03
+trip12	58.76
+trip13	56.41
+trip15	54.79
+trip20	38.18
+trip22	53.92
+trip46	37.54
+trip47	45.37
+trip72	44.66
+trip73	35.92
+	[rider212,*]:=
+trip5	40.2
+trip44	37.2
+trip63	35.68
+trip71	28.27
+	[rider213,*]:=
+trip1	49.66
+trip2	64.01
+trip7	64.08
+trip8	78.65
+trip10	77.48
+trip16	54.04
+trip18	70.76
+trip19	82.56
+trip50	61.69
+trip51	69.87
+trip52	85.15
+trip53	83.04
+trip62	52.58
+trip67	58.25
+trip68	85.69
+trip69	54.75
+trip80	62.21
+	[rider214,*]:=
+trip29	53.61
+trip30	80.51
+trip32	56.72
+trip34	71.86
+trip36	58.06
+trip37	70.82
+trip48	55.82
+trip54	56.83
+trip55	74.37
+trip57	75.76
+trip58	50.31
+trip77	46.77
+trip78	62.99
+trip81	47.08
+	[rider215,*]:=
+trip27	49.08
+trip36	42.08
+trip48	46.49
+trip54	59.2
+trip79	36.45
+	[rider216,*]:=
+trip27	22.61
+trip28	30.01
+trip36	25.17
+trip38	29.97
+trip79	12.17
+	[rider217,*]:=
+trip3	17.61
+trip4	24.38
+trip23	23.32
+trip25	18.08
+trip26	30.85
+trip31	17.25
+trip76	20.1
+	[rider218,*]:=
+trip1	11.34
+trip16	16.3
+trip58	21.17
+trip62	10.75
+	[rider219,*]:=
+trip67	18.03
+	[rider220,*]:=
+trip3	20.04
+trip4	26.72
+trip31	19.76
+	[rider221,*]:=
+trip1	42.35
+trip16	47.72
+trip62	44.82
+	[rider222,*]:=
+trip58	43.21
+trip77	48.21
+	[rider223,*]:=
+trip73	24.68
+	[rider224,*]:=
+trip61	51.38
+	[rider225,*]:=
+trip1	19.1
+trip2	43.72
+trip16	27.21
+trip58	30.58
+trip62	21.82
+trip69	30.63
+	[rider226,*]:=
+trip5	18.62
+	[rider227,*]:=
+trip11	40.77
+trip46	38.21
+	[rider228,*]:=
+trip5	23.37
+trip71	14.7
+	[rider229,*]:=
+trip11	37.46
+trip12	54.48
+trip13	53.48
+trip14	47.97
+trip20	32.77
+trip21	42.65
+trip46	33.63
+trip60	34.27
+	[rider230,*]:=
+trip1	35.27
+trip16	41
+trip58	44
+trip62	37.73
+	[rider231,*]:=
+trip27	49.85
+trip36	52.06
+trip39	41.87
+trip48	48.15
+trip54	52.86
+trip79	37.24
+	[rider232,*]:=
+trip20	18.46
+trip21	27.97
+trip22	34.69
+trip60	19.79
+trip69	21.24
+trip72	25.9
+	[rider233,*]:=
+trip77	14.17
+	[rider234,*]:=
+trip20	17.86
+trip22	33.94
+trip72	25.23
+trip73	14.77
+	[rider235,*]:=
+trip27	70.56
+trip39	60.77
+	[rider236,*]:=
+trip77	16.85
+	[rider237,*]:=
+trip3	40.63
+trip4	46.7
+trip23	48.28
+trip24	66.97
+trip25	42.35
+trip26	55.45
+trip31	42.31
+trip41	47.62
+trip42	58.03
+trip43	65.83
+trip65	51
+trip66	68.69
+trip70	55.25
+trip74	52.14
+trip75	74.93
+trip76	46.07
+	[rider238,*]:=
+trip39	22.04
+	[rider239,*]:=
+trip5	19.08
+trip44	18.99
+trip45	25.37
+trip63	17.49
+trip64	24.39
+trip71	8.58
+	[rider240,*]:=
+trip11	43.77
+trip12	57.65
+trip13	59.04
+trip14	55.94
+trip15	59.28
+trip20	37.17
+trip21	45.38
+trip22	52.79
+trip46	40.27
+trip47	49.76
+trip60	33.13
+trip72	43.73
+trip73	40.51
+	[rider241,*]:=
+trip3	36.58
+trip4	43.15
+trip31	36.3
+trip76	43.28
+	[rider242,*]:=
+trip77	22.13
+	[rider243,*]:=
+trip29	21.93
+trip30	45.11
+trip54	23.97
+	[rider244,*]:=
+trip39	29.45
+	[rider245,*]:=
+trip58	29.2
+	[rider246,*]:=
+trip16	13.42
+trip58	16.49
+trip62	14.48
+	[rider247,*]:=
+trip20	39.87
+trip21	49.35
+trip22	55.35
+trip60	41.18
+trip69	46.68
+trip72	46.62
+	[rider248,*]:=
+trip73	17.87
+	[rider249,*]:=
+trip1	40.99
+trip27	40.85
+trip28	45.83
+trip36	44.03
+trip37	74.49
+trip38	49.45
+trip39	35.66
+trip40	64.28
+trip48	49.96
+trip49	56.13
+trip50	53.73
+trip53	75.56
+trip79	27.87
+trip80	54.27
+	[rider250,*]:=
+trip1	13.97
+trip2	33.25
+trip39	17.61
+trip69	23.83
+trip79	13.17
+	[rider251,*]:=
+trip20	52.2
+trip21	60.28
+trip60	37.83
+trip73	52.41
+	[rider252,*]:=
+trip61	15.75
+	[rider253,*]:=
+trip11	23.13
+trip12	45.14
+trip13	42.51
+trip14	43.92
+trip15	40.97
+trip20	19.41
+trip21	32.15
+trip46	18.65
+trip47	27.59
+trip60	23.18
+trip73	17.11
+	[rider254,*]:=
+trip5	42.55
+trip44	39.7
+trip63	38.21
+trip71	38.28
+	[rider255,*]:=
+trip5	18.86
+	[rider256,*]:=
+trip3	15.66
+trip4	22.85
+trip23	23.37
+trip25	18.17
+trip26	30.07
+trip31	15.35
+trip76	19.24
+	[rider257,*]:=
+trip1	15.23
+trip16	17.62
+trip62	12.37
+	[rider258,*]:=
+trip29	41.38
+trip32	44.97
+trip36	49.27
+trip48	44.18
+trip54	44.66
+trip58	37.63
+	[rider259,*]:=
+trip58	36.07
+trip79	30.9
+	[rider260,*]:=
+trip3	16.11
+trip4	22.49
+trip23	21.8
+trip25	16.61
+trip26	32.32
+trip31	15.79
+trip76	18.52
+	[rider261,*]:=
+trip73	31.41
+	[rider262,*]:=
+trip61	20.8
+	[rider263,*]:=
+trip29	50.85
+trip30	76.83
+trip48	53.35
+trip54	52.54
+trip55	71.77
+trip57	74.3
+trip77	42.9
+trip78	58.9
+trip81	44.18
+	[rider264,*]:=
+trip5	18.92
+trip6	30.41
+trip44	21.44
+trip45	27.99
+trip61	22.2
+trip63	19.94
+trip64	27.08
+trip71	12.97
+	[rider265,*]:=
+trip3	14.79
+trip4	23.99
+trip31	14.52
+	[rider266,*]:=
+trip1	20.75
+trip2	41.14
+trip69	31.56
+	[rider267,*]:=
+trip5	44.7
+trip44	48.44
+trip61	49.07
+trip63	46.9
+trip71	36.56
+	[rider268,*]:=
+trip16	19.35
+trip58	17.97
+trip62	22.37
+	[rider269,*]:=
+trip39	18.3
+trip79	10.9
+	[rider270,*]:=
+trip1	36.62
+trip2	49.76
+trip50	46.45
+trip53	67.07
+trip69	41.34
+trip80	46.89
+	[rider271,*]:=
+trip73	18.34
+	[rider272,*]:=
+trip23	32.73
+trip25	32.76
+trip26	48.17
+trip76	37.55
+	[rider273,*]:=
+trip39	32.89
+trip79	26
+	[rider274,*]:=
+trip11	54.01
+trip12	66.21
+trip13	70.51
+trip14	64.87
+trip20	51.94
+trip21	61.93
+trip22	68.46
+trip46	50.08
+trip60	53.31
+trip69	47.89
+trip72	59.24
+	[rider275,*]:=
+trip1	25.11
+trip2	41.99
+trip69	32.93
+	[rider276,*]:=
+trip3	13.96
+trip4	22.38
+trip23	21.38
+trip25	16.21
+trip26	30.3
+trip31	13.69
+trip76	17.31
+	[rider277,*]:=
+trip1	16.58
+trip2	31.18
+trip69	21.73
+	[rider278,*]:=
+trip3	46.93
+trip4	53.51
+trip31	46.66
+	[rider279,*]:=
+trip77	16.07
+	[rider280,*]:=
+trip3	26.25
+trip4	32.8
+trip23	35.08
+trip25	29.93
+trip26	40.94
+trip31	25.99
+trip76	31.11
+	[rider281,*]:=
+trip5	18.25
+trip6	30.23
+trip61	18.93
+	[rider282,*]:=
+trip1	45.11
+trip7	52.7
+trip8	67.17
+trip9	70.79
+trip16	42.89
+trip17	69.32
+trip32	52.17
+trip34	67.24
+trip36	56.18
+trip37	66.96
+trip38	66.75
+trip48	52.31
+trip49	56.01
+trip54	54.34
+trip58	44.75
+trip79	43.37
+	[rider283,*]:=
+trip1	40.86
+trip7	51.92
+trip8	68.86
+trip9	72.11
+trip10	68.15
+trip16	46.04
+trip17	70.79
+trip18	62.17
+trip19	72.31
+trip32	55.3
+trip33	68.63
+trip34	69.63
+trip35	72.9
+trip48	39.01
+trip50	53.25
+trip51	61.25
+trip53	73.39
+trip58	48.68
+trip59	59.77
+trip62	43.68
+trip80	51.37
+	[rider284,*]:=
+trip1	14.04
+trip16	16.41
+trip62	11.42
+	[rider285,*]:=
+trip77	15.06
+	[rider286,*]:=
+trip61	37.28
+	[rider287,*]:=
+trip1	11.77
+trip16	16.99
+trip62	10.76
+	[rider288,*]:=
+trip23	56.17
+trip76	52.75
+	[rider289,*]:=
+trip5	39.18
+trip6	53.13
+trip61	34.42
+	[rider290,*]:=
+trip23	34.14
+trip76	31.15
+	[rider291,*]:=
+trip11	20.86
+trip13	39.7
+trip46	16.83
+	[rider292,*]:=
+trip29	27.49
+trip77	20.46
+trip78	35.8
+trip81	28.13
+	[rider293,*]:=
+trip44	56.86
+trip63	55.62
+trip71	48.94
+	[rider294,*]:=
+trip3	33.77
+trip4	40.32
+trip23	40.49
+trip25	31.62
+trip26	54.54
+trip31	33.49
+trip76	38.01
+	[rider295,*]:=
+trip23	41.13
+trip76	37.55
+	[rider296,*]:=
+trip5	39.23
+trip44	31.15
+trip61	42.79
+trip63	32.9
+	[rider297,*]:=
+trip1	13.99
+trip2	29.46
+trip69	20.01
+	[rider298,*]:=
+trip1	30.15
+trip2	49.07
+trip69	39.55
+trip79	23.77
+	[rider299,*]:=
+trip5	35.34
+trip44	39.45
+trip63	38.03
+trip71	28.01
+	[rider300,*]:=
+trip23	32.27
+trip25	28.39
+trip26	40.97
+trip76	31.17
+	[rider301,*]:=
+trip39	50.77
+	[rider302,*]:=
+trip39	32.65
+	[rider303,*]:=
+trip77	34
+	[rider304,*]:=
+trip39	25.39
+	[rider305,*]:=
+trip1	33.56
+trip62	31.89
+	[rider306,*]:=
+trip27	46.42
+trip28	54.35
+trip29	48.11
+trip30	72.83
+trip36	49.28
+trip38	59.18
+trip54	48.17
+trip79	35.8
+	[rider307,*]:=
+trip3	21.06
+	[rider308,*]:=
+trip1	13.58
+trip16	16.51
+trip58	20.86
+trip62	14.73
+	[rider309,*]:=
+trip44	29.06
+trip45	36.07
+trip63	27.52
+	[rider310,*]:=
+trip39	19.65
+trip79	12.03
+	[rider311,*]:=
+trip69	44.65
+	[rider312,*]:=
+trip23	33.96
+trip25	30.92
+trip26	46.34
+trip76	35.82
+	[rider313,*]:=
+trip39	42.63
+trip79	41.52
+	[rider314,*]:=
+trip16	21.99
+trip58	24.25
+trip79	21.18
+	[rider315,*]:=
+trip7	54.04
+trip8	68.62
+trip9	71.62
+trip16	44.23
+trip17	70.79
+trip32	52.34
+trip34	67.51
+trip48	51.68
+trip54	51.69
+trip58	45.01
+trip62	43.13
+	[rider316,*]:=
+trip1	15.38
+trip16	17.1
+trip58	22.06
+trip62	13.03
+	[rider317,*]:=
+trip1	20.68
+trip16	23.35
+trip62	18.35
+	[rider318,*]:=
+trip5	18.63
+trip44	20.79
+trip45	27.65
+trip63	19.25
+	[rider319,*]:=
+trip77	18.96
+	[rider320,*]:=
+trip3	23.13
+trip4	29.61
+trip23	26.07
+trip25	22.07
+trip26	35.21
+trip31	22.86
+trip76	25.45
+	[rider321,*]:=
+trip62	14.35
+	[rider322,*]:=
+trip3	21.69
+trip4	28.2
+trip31	21.39
+trip76	30.44
+	[rider323,*]:=
+trip16	17.73
+trip62	13.44
+	[rider324,*]:=
+trip1	17.25
+trip16	16.14
+trip58	17.35
+	[rider325,*]:=
+trip3	22.73
+trip4	29.24
+trip23	29.24
+trip25	24.1
+trip26	32.92
+trip31	22.45
+trip76	23.25
+	[rider326,*]:=
+trip3	14.65
+trip4	23.07
+trip31	14.38
+trip76	22.37
+	[rider327,*]:=
+trip16	16.15
+trip58	21.83
+trip62	15.25
+	[rider328,*]:=
+trip23	23.85
+trip25	15.48
+trip26	38.35
+trip76	21.38
+	[rider329,*]:=
+trip23	34.38
+	[rider330,*]:=
+trip77	19.63
+	[rider331,*]:=
+trip61	52.48
+	[rider332,*]:=
+trip11	20.18
+trip12	37.75
+trip13	36.69
+trip14	30.72
+trip15	39.62
+trip20	15.9
+trip21	25.45
+trip46	16.72
+trip47	28.97
+trip60	17.03
+trip73	19.65
+	[rider333,*]:=
+trip76	52.55;
+param  exist:
+trip1	trip2	trip3	trip4	trip5	trip6	trip7	trip8	trip9	trip10	trip11	trip12	trip13	trip14	trip15	trip16	trip17	trip18	trip19	trip20	trip21	trip22	trip23	trip24	trip25	trip26	trip27	trip28	trip29	trip30	trip31	trip32	trip33	trip34	trip35	trip36	trip37	trip38	trip39	trip40	trip41	trip42	trip43	trip44	trip45	trip46	trip47	trip48	trip49	trip50	trip51	trip52	trip53	trip54	trip55	trip56	trip57	trip58	trip59	trip60	trip61	trip62	trip63	trip64	trip65	trip66	trip67	trip68	trip69	trip70	trip71	trip72	trip73	trip74	trip75	trip76	trip77	trip78	trip79	trip80	trip81:=
+request1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+request2	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+request3	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+request4	0	0	0	0	0	0	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+request5	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+request6	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+request7	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+request8	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+request9	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+request10	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+request11	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+request12	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+request13	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+request14	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+request15	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+request16	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+request17	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+request18	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+request19	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	1	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+request20	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+request21	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+request22	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+request23	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+request24	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+request25	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+request26	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+request27	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+request28	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+request29	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+request30	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
+request31	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0
+request32	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0
+request33	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
+request34	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0
+request35	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0
+request36	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0
+request37	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0
+request38	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	1	0	0	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1	0
+request39	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	1;
+					

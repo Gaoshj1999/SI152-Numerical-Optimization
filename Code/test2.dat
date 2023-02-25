@@ -1,0 +1,19 @@
+set rider:=
+rider1
+rider2;
+set request:=	request1	request2   ;
+set Trip:= trip1	trip2    trip3;
+set trip[rider1]:=	trip1	trip2;	
+set trip[rider2]:=	trip1	trip3;																																																																																																																						
+
+param cost :=	[rider1,*]:=
+trip1	10
+trip2	5
+	[rider2,*]:=
+trip1	4
+trip3	7;
+
+param  exist:
+trip1	trip2	trip3:=
+request1 1 0 1
+request2 0 1 1 ;

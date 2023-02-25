@@ -1,0 +1,11 @@
+var x1;
+var x2;
+var x3;
+minimize total:x1-x2;
+subject to limit1:-x1+2*x2+x3=2;
+subject to limit2:-4*x1+4*x2-x3=4;
+subject to limit3:-5*x1+6*x2=6;
+subject to limit4:x1-x3=0;
+subject to limit5:x1>=0;
+subject to limit6:x2>=0;
+subject to limit7:x3>=0;

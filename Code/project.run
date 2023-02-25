@@ -1,0 +1,3 @@
+solve;
+display totalcost;
+display {i in rider,j in trip[i]: response[i,j]=1};
